@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* shift+alt+f */
+
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+a,
+form,
+input,
+select,
+option,
+label,
+textarea,
+span,
+img,
+table,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+em,
+b,
+strong,
+tr,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* 移动端mate */
+
+
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0,minimum-scale=1.0,
+user-scalable=no"> */
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+em,
+i {
+    font-size: normal;
+}
+
+b,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+\ h6 {
+    font-weight: normal;
+}
+
+em,
+i {
+    font-size: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-weight: normal;
+}
+
+img {
+    display: block;
+}
+
+.clearFix::after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}

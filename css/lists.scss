@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    position: relative;
+    // border: 1px solid transparent;
+    margin-top: -1px;
+    min-width: 320px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: #f2f2f2;
+    #main {
+        // margin-top: -116px;
+        border-top: 116px solid black;
+        position: relative;
+        // z-index: -1;
+        // iphone12 lar大图
+        .container {
+            padding-bottom: 90px;
+            z-index: 222;
+            // position: absolute;
+            margin: 0 auto;
+            top: 200px;
+            // overflow: hidden;
+            display: block;
+            font-family: "SF Pro SC", "SF Pro Text";
+            text-align: center;
+            position: relative;
+            top: 84px;
+            // display: flex;
+            // justify-content: space-between;
+            flex-wrap: wrap;
+            .list {
+                overflow: hidden;
+                display: flex;
+                flex-wrap: wrap;
+                .list-item {
+                    width: 260px;
+                    border: 1px solid #ccc;
+                    float: left;
+                    margin: 10px 10px;
+                    .title {
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: center;
+                        .breadcrumb {
+                            height: 36px;
+                            overflow: hidden;
+                        }
+                        .row {
+                            margin: 0;
+                            div {
+                                .thumbnail {
+                                    .caption {
+                                        h3 {
+                                            /*有些示例里需要定义该属性，实际可省略*/
+                                            display: -webkit-box;
+                                            -webkit-line-clamp: 2;
+                                            /*规定超过两行的部分截断*/
+                                            -webkit-box-orient: vertical;
+                                            overflow: hidden;
+                                            word-break: break-all;
+                                            /*在任何地方换行*/
+                                        }
+                                        .price {
+                                            font-size: 30px;
+                                            color: red
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .page {
+                height: 40px;
+                border: 1px solid skyblue;
+                width: 60%;
+                margin: auto;
+                p {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

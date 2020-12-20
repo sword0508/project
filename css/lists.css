@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  position: relative;
+  margin-top: -1px;
+  min-width: 320px;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color: #f2f2f2;
+}
+
+body #main {
+  border-top: 116px solid black;
+  position: relative;
+}
+
+body #main .container {
+  padding-bottom: 90px;
+  z-index: 222;
+  margin: 0 auto;
+  top: 200px;
+  display: block;
+  font-family: "SF Pro SC", "SF Pro Text";
+  text-align: center;
+  position: relative;
+  top: 84px;
+  flex-wrap: wrap;
+}
+
+body #main .container .list {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body #main .container .list .list-item {
+  width: 260px;
+  border: 1px solid #ccc;
+  float: left;
+  margin: 10px 10px;
+}
+
+body #main .container .list .list-item .title {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+body #main .container .list .list-item .title .breadcrumb {
+  height: 36px;
+  overflow: hidden;
+}
+
+body #main .container .list .list-item .title .row {
+  margin: 0;
+}
+
+body #main .container .list .list-item .title .row div .thumbnail .caption h3 {
+  /*有些示例里需要定义该属性，实际可省略*/
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /*规定超过两行的部分截断*/
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+  /*在任何地方换行*/
+}
+
+body #main .container .list .list-item .title .row div .thumbnail .caption .price {
+  font-size: 30px;
+  color: red;
+}
+
+body #main .container .page {
+  height: 40px;
+  border: 1px solid skyblue;
+  width: 60%;
+  margin: auto;
+}
+
+body #main .container .page p {
+  cursor: pointer;
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.html/register.css">
+    <script src="../package/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="../package/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../package/bootstrap/css/bootstrap.css">
+    <script src="../package/validate/jquery.validate.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav id="ac-globalnav">
+        <div class="nav_content">
+            <ul class="nav nav-pills">
+                <li role="presentation">
+                    <a href="#"> <img src="../images/globalnav_apple_image__cxwwnrj0urau_large.svg" alt=""></a>
+
+                </li>
+                <li role="presentation"><a href="#">Mac</a></li>
+
+                <li role="presentation"><a href="#">iPad</a></li>
+                <li role="presentation"><a href="#" class="iphoneClick">iPhone</a></li>
+                <li role="presentation"><a href="#">Watch</a></li>
+                <li role="presentation"><a href="#">Music</a></li>
+                <li role="presentation"><a href="#">技术支持</a></li>
+                <li role="presentation">
+                    <a href="#">
+                        <i class="iconfont icon-fenleishousuo"></i>
+                    </a>
+                </li>
+                <li role="presentation"><a href="#"><i class="iconfont icon-gouwuche"></i></a></li>
+            </ul>
+            <!-- 搜索栏窗口 -->
+            <aside id="ac-gn-searchview">
+                <div class="ac-gn-searchview-content">
+                    <div class="ac-gn-searchview-bar">
+                        <div class="ac-gn-searchview-bar-wrapper">
+                            <form id="ac-gn-searchform" action="/search" method="get">
+                                <div class="ac-gn-searchform-wrapper">
+                                    <input class="ac-gn-searchform-input" type="text" aria-label="搜索 apple.com.cn" placeholder="搜索 apple.com.cn">
+                                    <input id="ac-gn-searchform-src" type="hidden" name="src" value="globalnav">
+                                    <button id="ac-gn-searchform-submit" type="submit" disabled="" aria-label="提交搜索"> </button>
+                                    <button id="ac-gn-searchform-reset" type="reset" disabled="" aria-label="清除搜索">
+                                                    <span class="ac-gn-searchform-reset-background"></span>
+                                                </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <aside class="ac-gn-searchresults">
+                        <section class=" ac-gn-searchresults-section-defaultlinks">
+                            <div class="ac-gn-searchresults-section-wrapper">
+                                <h3 class="ac-gn-searchresults-header ">快速链接</h3>
+                                <ul class="ac-gn-searchresults-list">
+                                    <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/shop/goto/gifts/" class="ac-gn-searchresults-link">佳节好礼</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/retail/" class="ac-gn-searchresults-link">查找零售店</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item ">
+                                        <a href="https://www.apple.com.cn/shop/goto/shop" class="ac-gn-searchresults-link">Apple Store 商店在线选购</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/shop/goto/accessories/apple_accessories" class="ac-gn-searchresults-link">配件</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/airpods/" role="option" class="ac-gn-searchresults-link">AirPods</a>
+                                    </li>
+                                </ul>
+                                <span role="status" class="ac-gn-searchresults-count" aria-live="polite">5 快速链接</span>
+                            </div>
+                        </section>
+
+                    </aside>
+                </div>
+                <button class="ac-gn-searchview-close
+                        " aria-label="取消搜索">
+                                <span class="ac-gn-searchview-close-wrapper">
+                                    <span class="ac-gn-searchview-close-left"></span>
+                                    <span class="ac-gn-searchview-close-right"></span>
+                                </span>
+                            </button>
+            </aside>
+        </div>
+    </nav>
+    <!-- subnav -->
+    <div class="subnav">
+        <div class="container">
+            <div class="title-tk-label">Apple&nbsp;ID</div>
+            <div class="menu-wrapper">
+                <ul class="menu">
+                    <li class="item item-click" style="cursor: pointer;">
+                        <a class="btn-tk-caption item-click btn-signin">登录</a>
+                    </li>
+                    <li class="item active">
+                        <a href="/account" class="btn-tk-caption btn-create">创建您的 Apple&nbsp;ID</a>
+                    </li>
+                    <li class="item">
+                        <a href="/faq" class="btn-tk-caption btn-faq">常见问题解答</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- imageWrapper -->
+    <div class="hero-create">
+        <div class="hero-image-wrapper">
+            <div class="hero-image-alignment">
+                <h1 class="tk-section-headline mobile-only">创建您的 Apple&nbsp;ID</h1>
+                <h1 class="tk-section-headline not-mobile" tabindex="-1">创建您的 Apple&nbsp;ID</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- 表单 -->
+    <div class="flow-body-top">
+        <!-- 在此查找 -->
+        <div class="text-centered">
+
+            <div class="intro-text"> 只需一个 Apple&nbsp;ID，您即可访问 Apple 所有内容。
+            </div>
+            <div class="intro-link"> 已有 Apple&nbsp;ID？
+                <a class="no-wrap" href="https://iforgot.apple.com/appleid">在此查找 
+                <span class="sr-only">在新窗口中打开。</span>
+                <i class="sk-icon-chevronright" >></i>
+                <span class="a11y"></span></a>
+            </div>
+
+        </div>
+    </div>
+    <!-- part1 name+国家 -->
+    <form class="form-all-NC" action="../api/register.php" method="POST">
+        <div class="container-xs">
+            <!-- 姓名 -->
+            <div class="form-table">
+                <div class="form-cell">
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail3">姓氏</label>
+                        <input type="text" class="form-control" id="exampleInputEmail name3" name="firstName" placeholder="姓氏">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword3">名字</label>
+                        <input type="text" class="form-control" id="exampleInputPassword3" placeholder="名字" name="lastName">
+                    </div>
+                </div>
+
+            </div>
+            <!-- 国家 + 生日 -->
+            <div class="row">
+                <div class="column-large-12">
+                    <h3 class="tk-body-reduced">
+                        国家或地区
+                    </h3>
+                    <select name="country" id="generic-input-field">
+                        <option value="ALB" dir="auto">
+                            中国大陆</option>
+                    </select>
+                    <input type="text" name="birthday" class="birth" placeholder="出生日期">
+                    <div class="idms-icon">
+                        <button class="btn-link">
+                            <i aria-hidden="true" class="glyphicon glyphicon-exclamation-sign">
+                            </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button id="checkbtn-1">check</button>
+        </div>
+
+    </form>
+
+
+    <!-- part2 email -->
+    <form class="form-all-Email" action="../api/register.php">
+        <!-- email -->
+        <div class="container-xs">
+            <div class="row">
+                <div class="column-large12">
+                    <div class="field-pop-wrapper">
+                        <input type="email" name="email" class="field-info" placeholder="name@example.com">
+                        <div class="tk-body-reduced">
+                            这将是您的新 Apple&nbsp;ID。
+                        </div>
+                        <input name="setPassword" type="password" class="field-info field-passWord" placeholder="密码">
+                        <input name="checkSet" type="password" class="field-info field-passWord" placeholder="确认密码">
+
+                    </div>
+                </div>
+            </div>
+            <button id="checkbtn-2">check</button>
+        </div>
+
+    </form>
+
+    <!-- part 3 验证区域 -->
+    <form class="form-all-test ">
+        <!-- email -->
+        <div class="container-xs">
+            <div class="row">
+                <div class="column-large-12">
+                    <select disabled name="电话" id="generic-input-field">
+                        <option value="CN" >
+                            +86 (中国大陆)
+              
+          </option>
+                    </select>
+                    <div class="form-element">
+                        <input type="text" name="tel" class="form-label-input" placeholder="电话号码">
+                        <!-- <span class="form-label"></span> -->
+
+                    </div>
+                    <div class="idms-icon">
+                        <button class="btn-link">
+                            <i aria-hidden="true" class="glyphicon glyphicon-exclamation-sign">
+                            </i>
+                        </button>
+                    </div>
+                    <div class="tk-body-reduced">
+                        中国大陆的 Apple&nbsp;ID 必须与一个经验证的中国电话号码相关联。
+                    </div>
+                    <!-- 验证方式 -->
+                    <div class="phone-type">
+                        <div class="form-label-inline">验证方式：</div>
+                        <div class="form-cell">
+                            <div class="form-element">
+                                <input type="radio" name="test" class="verify-mode-sms-input">
+                                <label for="_gp1_1">                短信
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-cell">
+                            <div class="form-element">
+                                <input type="radio" name="test" class="verify-mode-voice-input">
+                                <label for="_gp1_2">                语音来电
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="checkbtn-3">check</button>
+        </div>
+
+    </form>
+
+    <!--公告  -->
+    <form class="form-all-test">
+        <div class="container-xs">
+            <div class="updates">
+                <div class="form-element">
+                    <input type="checkbox" name="news" class="form-choice-checkbox">
+                    <label class="form-label" for="news">
+                    <span class="form-choice-indicator"></span>
+                    公告 
+                    <small class="tk-caption">获取有关 Apple 产品、服务和软件的公告、推荐和更新。</small>
+                  </label>
+                </div>
+
+                <div class="form-element">
+                    <input type="checkbox" name="itunes" class="form-choice-checkbox">
+                    <label class="form-label" for="itunes">
+                    <span class="form-choice-indicator"></span>
+                    App、音乐、电视节目以及更多内容 <small class="tk-caption">获取有关 App、音乐、电影、电视节目、图书、播客、Apple&nbsp;Pay 等的最新发布、独家内容、特别优惠和推荐。</small>
+                  </label>
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+    <!-- 图片验证 -->
+    <form class="form-all-test">
+        <div class="container-xs">
+            <div class="row">
+                <div class="captcha-img-wrapper">
+                    <div class="field-wrapper">
+                        <!-- <idms-captcha image-alternate-text="安全提示图片"> -->
+                        <div class="idms-captcha-wrapper">
+
+                            <div class="img-wrapper">
+                                <p id="picyzm" style="height:inherit"></p>
+
+                                <!-- <img width="120" height="58" {$src}="imageSource" alt="安全提示图片" src="data:image/jpeg;base64, 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"> -->
+                            </div>
+                            <!-- <input type="text" class="generic-input-field "> -->
+
+
+                        </div>
+                        <!-- </idms-captcha> -->
+                    </div>
+                </div>
+                <div class="captcha-field-wrapper">
+                    <div class="field-wrapper">
+                        <div class="field-pop-wrapper">
+                            <captcha-input placeholder="键入图中的字符">
+                                <div class="captcha-input">
+                                    <idms-textbox>
+                                        <idms-error-wrapper>
+                                            <div class="idms-error-wrapper">
+
+                                                <div class="form-element">
+                                                    <input class="generic-input-field ">
+                                                    <span class="form-label">键入图中的字符</span>
+                                                    <input style="border:0" type="button" value="验证" id="btn">
+                                                </div>
+                                            </div>
+                                        </idms-error-wrapper>
+                                    </idms-textbox>
+                                </div>
+                            </captcha-input>
+                        </div>
+                        <div class="captcha-control-wrapper">
+                            <div class="new-code">
+                                <button class="button-link-first">
+                              <span class="icon_reload"></span>                              新代码
+                            </button>
+                            </div>
+                            <div class="new-captcha">
+                                <button class="button-link">
+                              <span class="icon_sound"></span>                              视力障碍
+                            
+                          </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- 底部小人 -->
+    <form class="form-all-private">
+        <div class="container-xs">
+            <div class="privacy-wrapper">
+                <div class="privacy-icon"></div>
+
+                您的 Apple&nbsp;ID 信息被用于确保您能够安全登录并访问您的数据。出于安全性、支持和报告的目的，Apple 会记录您的某些使用情况数据。
+                <a href="https://support.apple.com/HT208650" target="_blank">了解数据的管理方式。
+                    <span class="sr-only">在新窗口中打开。</span>
+                </a>
+            </div>
+        </div>
+    </form>
+
+    <script src="../package/gverify.js"></script>
+    <script src="../js/iphone.js"></script>
+    <script src="../package/validate/localization/messages_zh.min.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,701 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    position: relative;
+    // border: 1px solid transparent;
+    margin-top: -1px;
+    min-width: 320px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: #f2f2f2;
+    #main {
+        margin-top: -116px;
+        border-top: 116px solid black;
+        position: relative;
+        // 推荐配件+选购
+        .section-accessories {
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 110px;
+            width: auto;
+            max-width: 1440px;
+            overflow: hidden;
+            .typography-section-headline {
+                margin-bottom: 70px;
+                font-size: 56px;
+                line-height: 1.07143;
+                font-weight: 600;
+                margin-left: auto;
+                margin-right: auto;
+                color: #1d1d1f;
+            }
+            .tile-full {
+                padding: 71px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 1070px;
+                min-height: 530px;
+                margin: 0 auto 10px;
+                box-sizing: border-box;
+                background: #fff;
+                .copy-wrapper {
+                    flex-basis: 50%;
+                    max-width: 50%;
+                    .typography-headline {
+                        font-size: 48px;
+                        line-height: 52px;
+                        font-weight: 600;
+                        margin-bottom: 16px;
+                    }
+                    .tile-copy {
+                        font-size: 21px;
+                        line-height: 1.381;
+                        font-weight: 400;
+                        letter-spacing: .011em;
+                        margin-top: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 340px;
+                    }
+                    .links-stacked {
+                        margin-left: 0;
+                        margin-right: 0;
+                        list-style: none;
+                        .tile-cta {
+                            margin: 0 .5em;
+                            display: inline-block;
+                            line-height: 29px;
+                            font-weight: 400;
+                            letter-spacing: .011em;
+                            text-align: -webkit-match-parent;
+                            .icon-wrapper {
+                                // text-decoration: none;
+                                color: #06c;
+                                letter-spacing: inherit;
+                                span {
+                                    font-size: 21px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tile-image-container {
+                    flex-basis: 50%;
+                    max-width: 50%;
+                    .tile-image {
+                        background-image: url(https://www.apple.com.cn/iphone/home/images/overview/accessories/magsafe__b2nmlrkzfyxe_large.jpg);
+                        width: 389px;
+                        height: 394px;
+                        background-size: 389px 394px;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            .tile-full-plus {
+                padding: 71px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 1070px;
+                min-height: 530px;
+                margin: 0 auto 10px;
+                box-sizing: border-box;
+                background: #fff;
+                .copy-wrapper {
+                    flex-basis: 50%;
+                    max-width: 50%;
+                    order: 1;
+                    .typography-headline {
+                        font-size: 48px;
+                        line-height: 52px;
+                        font-weight: 600;
+                        margin-bottom: 16px;
+                    }
+                    .tile-copy {
+                        font-size: 21px;
+                        line-height: 29px;
+                        font-weight: 400;
+                        letter-spacing: .011em;
+                        margin-top: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 340px;
+                    }
+                    .links-stacked {
+                        margin-left: 0;
+                        margin-right: 0;
+                        list-style: none;
+                        .tile-cta {
+                            margin: 0 .5em;
+                            display: inline-block;
+                            line-height: 29px;
+                            font-weight: 400;
+                            letter-spacing: .011em;
+                            text-align: -webkit-match-parent;
+                            .icon-wrapper {
+                                // text-decoration: none;
+                                color: #06c;
+                                letter-spacing: inherit;
+                                span {
+                                    font-size: 21px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tile-image-container {
+                    flex-basis: 50%;
+                    max-width: 50%;
+                    order: 0;
+                    .engraving-image {
+                        background-image: url(https://www.apple.com.cn/iphone/home/images/overview/accessories/iphone_airpods_engraving_update__cisee7n0dxsi_large.jpg);
+                        width: 473px;
+                        height: 233px;
+                        background-size: 473px 233px;
+                        background-repeat: no-repeat;
+                        position: relative;
+                        left: 50%;
+                        margin-left: -178px;
+                    }
+                }
+            }
+            // 选购配件
+            .accessories-cta {
+                margin-top: 52px;
+                padding: 0 30px;
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 400;
+                letter-spacing: .009em;
+            }
+        }
+        // 售后服务
+        .section-buystrip {
+            padding-top: 83px;
+            margin-bottom: 30px;
+            text-align: center;
+            overflow: hidden;
+            .buystrip-wrapper {
+                max-width: 1440px;
+                margin: 0 auto;
+                .flex-wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    // <!-- medium width alt -->
+                    .buystrip-tile {
+                        box-sizing: border-box;
+                        max-width: 370px;
+                        flex-basis: 33.33333%;
+                        font-size: 17px;
+                        font-weight: 400;
+                        line-height: 25px;
+                        text-align: center;
+                        .image-icon {
+                            width: 51px;
+                            height: 75px;
+                            background-size: 51px 75px;
+                            background-repeat: no-repeat;
+                            background-image: url(https://www.apple.com.cn/v/iphone/home/ar/images/overview/buystrip/icon_delivery__bcb7fau42ik2_large.png);
+                            position: relative;
+                            left: 50%;
+                            margin-left: -25.5px;
+                            margin-bottom: 15px;
+                        }
+                        .typography-buystrip-headline {
+                            font-size: 18px;
+                            line-height: 29px;
+                            font-weight: 600;
+                            height: 29px;
+                            letter-spacing: .231px;
+                        }
+                        .typography-tile-copy {
+                            margin-top: 0;
+                            font-size: 18px;
+                            line-height: 29px;
+                            font-weight: 400;
+                            letter-spacing: .011em;
+                            margin-left: auto;
+                            margin-right: auto;
+                            flex-basis: 83.33333%;
+                            max-width: 83.33333%;
+                            p {
+                                margin-top: 0.4em;
+                                span {
+                                    display: inline-block;
+                                    text-decoration: inherit;
+                                    white-space: nowrap;
+                                }
+                                .icon-wrapper {
+                                    margin-top: 0.8em;
+                                    // text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // iphone那么不一样
+        .section-why-iphone {
+            text-align: center;
+            padding-top: 110px;
+            overflow: hidden;
+            .typography-section-headline {
+                margin-bottom: 70px;
+                font-size: 56px;
+                line-height: 60px;
+                font-weight: 600;
+                margin-left: auto;
+                margin-right: auto;
+                flex-basis: 83.33333%;
+                max-width: 83.33333%;
+            }
+            .flex-tile-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                width: auto;
+                flex-wrap: wrap;
+                overflow: hidden;
+                max-width: 1440px;
+                margin: 0 auto;
+                padding: 0 30px;
+                box-sizing: border-box;
+                flex-direction: row;
+                .tile-wrapper {
+                    margin-left: auto;
+                    margin-right: auto;
+                    box-sizing: border-box;
+                    max-width: 1440px;
+                    background-color: #fff;
+                    text-align: center;
+                    flex-grow: 2;
+                    width: auto;
+                    margin-bottom: 30px;
+                    flex-basis: 100%;
+                    .banner-container {
+                        margin: 0 auto;
+                        max-width: 1440px;
+                        display: flex;
+                        background: #fff;
+                        overflow: hidden;
+                        justify-content: space-between;
+                        flex-wrap: nowrap;
+                        flex-direction: row;
+                        width: 100%;
+                        .flex-copy-wrapper {
+                            display: flex;
+                            flex-shrink: 0;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            box-sizing: border-box;
+                            padding-left: 45px;
+                            flex-basis: 41.66667%;
+                            max-width: 41.66667%;
+                            .typography-tile-eyebrow {
+                                font-size: 28px;
+                                line-height: 32px;
+                                font-weight: 600;
+                                letter-spacing: .007em;
+                            }
+                            .typography-tile-headline {
+                                margin-top: 11px;
+                                padding-left: 0.4em;
+                                font-size: 48px;
+                                line-height: 1.08349;
+                                font-weight: 600;
+                            }
+                            .icon-wrapper {
+                                margin-top: 14px;
+                            }
+                        }
+                        .image-wrapper {
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: flex-end;
+                            flex-basis: 58.33333%;
+                            max-width: 58.33333%;
+                            .ios-14-image {
+                                width: 750px;
+                                height: 500px;
+                                background-size: 750px 500px;
+                                background-repeat: no-repeat;
+                                background-image: url(https://www.apple.com.cn/iphone/home/images/overview/why-iphone/ios14__djivkarbz3gy_large.jpg);
+                            }
+                        }
+                    }
+                }
+                .tile-wrapper-left {
+                    padding-right: 15px;
+                    margin: 0 auto;
+                    width: 100%;
+                    text-align: center;
+                    flex-grow: 1;
+                    box-sizing: border-box;
+                    margin-bottom: 30px;
+                    flex-basis: 50%;
+                    max-width: 50%;
+                    .background-wrapper {
+                        background-color: #fff;
+                        height: 100%;
+                        width: 100%;
+                        position: relative;
+                        overflow: hidden;
+                        .content-wrapper {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            .tile-copy-wrapper {
+                                .tile-headline {
+                                    margin-top: 62px;
+                                    font-size: 44px;
+                                    line-height: 52px;
+                                    font-weight: 550;
+                                }
+                                .tile-copy {
+                                    margin-top: 13px;
+                                    font-size: 18px;
+                                    line-height: 29px;
+                                    font-weight: 400;
+                                    letter-spacing: .011em;
+                                    color: rgba(29, 29, 31, 0.8);
+                                }
+                                .icon-wrapper {
+                                    display: block;
+                                    margin-top: 16px;
+                                }
+                            }
+                            .image-wrapper {
+                                position: relative;
+                                width: 100%;
+                                height: 374px;
+                                margin-top: 25px;
+                                flex: none;
+                                .image-why-switch {
+                                    width: 455px;
+                                    height: 374px;
+                                    background-size: 455px 374px;
+                                    background-repeat: no-repeat;
+                                    position: relative;
+                                    left: 50%;
+                                    margin-left: -227.5px;
+                                    background-image: url(https://www.apple.com.cn/iphone/home/images/overview/why-iphone/switch_to_iphone__dcdfmymgd5ci_large.jpg);
+                                }
+                            }
+                        }
+                    }
+                }
+                .tile-wrapper-right {
+                    padding-left: 15px;
+                    margin: 0 auto;
+                    width: 100%;
+                    text-align: center;
+                    flex-grow: 1;
+                    box-sizing: border-box;
+                    margin-bottom: 30px;
+                    flex-basis: 50%;
+                    max-width: 50%;
+                    .background-wrapper {
+                        background-color: #fff;
+                        height: 100%;
+                        width: 100%;
+                        position: relative;
+                        overflow: hidden;
+                        .content-wrapper {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            .tile-copy-wrapper {
+                                .image-wrapper {
+                                    position: relative;
+                                    width: 100%;
+                                    // height: 374px;
+                                    margin-top: 166px;
+                                    flex: none;
+                                    .image-privacy {
+                                        width: 63px;
+                                        height: 85px;
+                                        background-size: 63px 85px;
+                                        background-repeat: no-repeat;
+                                        position: relative;
+                                        left: 50%;
+                                        margin-left: -31.5px;
+                                        background-image: url(https://www.apple.com.cn/v/iphone/home/ar/images/overview/why-iphone/privacy__chvi4opnmg5e_large.png);
+                                    }
+                                }
+                                .tile-headline {
+                                    margin-top: 18px;
+                                    font-size: 48px;
+                                    line-height: 52px;
+                                    font-weight: 550;
+                                }
+                                .tile-copy {
+                                    margin-top: 13px;
+                                    font-size: 18px;
+                                    line-height: 29px;
+                                    font-weight: 400;
+                                    letter-spacing: .011em;
+                                    color: rgba(29, 29, 31, 0.8);
+                                }
+                                .icon-wrapper {
+                                    display: block;
+                                    margin-top: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 尽享iphone精彩
+        .section-more-iphone {
+            padding-top: 110px;
+            overflow: hidden;
+            .typography-section-headline {
+                text-align: center;
+                margin-bottom: 70px;
+                font-size: 56px;
+                line-height: 1.07143;
+                font-weight: 600;
+                margin-left: auto;
+                margin-right: auto;
+                flex-basis: 83.33333%;
+                max-width: 83.33333%;
+                color: rgba(29, 29, 31, 0.9);
+            }
+            .flex-tile-wrapper {
+                width: auto;
+                flex-wrap: wrap;
+                overflow: hidden;
+                max-width: 1440px;
+                margin: 0 auto;
+                padding: 0 30px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                .tile-wrapper {
+                    width: 100%;
+                    padding: 100px 0;
+                    min-height: 504px;
+                    background-size: 1375px 504px;
+                    background-repeat: no-repeat;
+                    background-color: #fff;
+                    background-image: url(https://www.apple.com.cn/v/iphone/home/ar/images/overview/more-iphone/taa/taa_make_your_holiday_iphone__brg4lf56u5aq_large.jpg);
+                    background-position: center bottom;
+                    text-align: center;
+                    flex-grow: 2;
+                    margin-bottom: 30px;
+                    box-sizing: border-box;
+                    .content-wrapper {
+                        height: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        width: 100%;
+                        .copy-wrapper {
+                            flex-basis: 33.33333%;
+                            max-width: 33.33333%;
+                            margin-left: 8.33333%;
+                            align-self: center;
+                            .typography-eyebrow {
+                                display: block;
+                                margin-bottom: .4em;
+                                font-size: 24px;
+                                line-height: 28px;
+                                font-weight: 600;
+                                letter-spacing: .009em;
+                            }
+                            .typography-tile-headline {
+                                font-size: 48px;
+                                line-height: 1.08349;
+                                font-weight: 600;
+                            }
+                            .typography-tile-copy {
+                                font-size: 21px;
+                                line-height: 29px;
+                                font-weight: 400;
+                                letter-spacing: .011em;
+                            }
+                        }
+                    }
+                }
+                .tile-wrapper-Middle {
+                    overflow: hidden;
+                    text-align: center;
+                    flex-grow: 2;
+                    width: auto;
+                    margin-bottom: 30px;
+                    box-sizing: border-box;
+                    flex-basis: 100%;
+                    max-width: 100%;
+                    .banner-container {
+                        background-color: #ffffff;
+                        width: auto;
+                        display: flex;
+                        flex-wrap: wrap;
+                        .flex-copy-wrapper {
+                            flex-basis: 41.66667%;
+                            max-width: 41.66667%;
+                            margin-left: 8.33333%;
+                            .tile-headline-image {
+                                width: 84px;
+                                height: 35px;
+                                background-size: 84px 35px;
+                                background-repeat: no-repeat;
+                                margin: 0 auto;
+                                background-image: url(https://www.apple.com.cn/iphone/home/images/overview/more-iphone/apple_pay_logo_large.png);
+                                margin-top: 154px;
+                                .typography-tile-headline {
+                                    font-size: 48px;
+                                    line-height: 52px;
+                                    font-weight: 600;
+                                    position: absolute;
+                                    clip: rect(1px, 1px, 1px, 1px);
+                                    clip-path: inset(0px 0px 99.9% 99.9%);
+                                    overflow: hidden;
+                                    height: 1px;
+                                    width: 1px;
+                                    padding: 0;
+                                    border: 0;
+                                }
+                            }
+                            .typography-tile-headline {
+                                padding-left: 0.5em;
+                                margin-left: -39px;
+                                margin-right: -39px;
+                                margin-top: .2em;
+                                font-size: 48px;
+                                line-height: 1.08349;
+                                font-weight: 600;
+                            }
+                        }
+                        .banner-image-wrapper {
+                            flex-basis: 50%;
+                            max-width: 50%;
+                            .apple-pay-image {
+                                width: 331px;
+                                height: 464px;
+                                background-size: 331px 464px;
+                                background-repeat: no-repeat;
+                                margin: 36px auto 0;
+                                background-image: url(https://www.apple.com.cn/iphone/home/images/overview/more-iphone/apple-pay/apple_pay_large.png);
+                            }
+                        }
+                    }
+                }
+                .tile-wrapper-End {
+                    text-align: center;
+                    flex-grow: 2;
+                    width: auto;
+                    margin-bottom: 30px;
+                    box-sizing: border-box;
+                    flex-basis: 100%;
+                    max-width: 100%;
+                    .content-wrapper {
+                        -webkit-box-align: initial;
+                        -ms-flex-align: initial;
+                        align-items: initial;
+                        padding-bottom: 0;
+                        min-height: auto;
+                        background: #fafafa;
+                        display: flex;
+                        padding-top: 88px;
+                        overflow: hidden;
+                        -webkit-box-pack: justify;
+                        justify-content: space-between;
+                        .copy-wrapper {
+                            margin-top: 6px;
+                            flex-basis: 41.66667%;
+                            max-width: 41.66667%;
+                            .tile-headline-image {
+                                width: 156px;
+                                height: 39px;
+                                background-size: 156px 39px;
+                                background-repeat: no-repeat;
+                                background-image: url(https://www.apple.com.cn/v/iphone/home/ar/images/overview/more-iphone/apple_music_logo__ocze2os441m6_large.png);
+                                margin: 0 auto;
+                                margin-top: 70px;
+                                .typography-tile-headline {
+                                    margin-top: 60px;
+                                    font-size: 48px;
+                                    line-height: 52px;
+                                    font-weight: 600;
+                                    position: absolute;
+                                    clip: rect(1px, 1px, 1px, 1px);
+                                    clip-path: inset(0px 0px 99.9% 99.9%);
+                                    overflow: hidden;
+                                    height: 1px;
+                                    width: 1px;
+                                    padding: 0;
+                                    border: 0;
+                                }
+                            }
+                            .tile-copy {
+                                max-width: 100%;
+                                margin: 0 auto;
+                                margin-top: 15px;
+                                color: rgba(29, 29, 31, 0.8);
+                                font-size: 21px;
+                                line-height: 29px;
+                                font-weight: 400;
+                                letter-spacing: .011em;
+                                flex-basis: 58.33333%;
+                            }
+                            .links-stacked {
+                                margin-left: 0;
+                                margin-right: 0;
+                                list-style: none;
+                                .tile-cta {
+                                    display: inline-block;
+                                    margin-bottom: 40px;
+                                    margin-top: 6px;
+                                    color: #06c;
+                                    margin-left: 15px;
+                                    margin-right: 15px;
+                                    font-size: 21px;
+                                    line-height: 29px;
+                                    font-weight: 400;
+                                    letter-spacing: .011em;
+                                }
+                            }
+                        }
+                        .image-wrapper {
+                            margin: 0 auto;
+                            -webkit-box-pack: center;
+                            justify-content: center;
+                            height: 384px;
+                            width: 100%;
+                            position: relative;
+                            flex: none;
+                            max-width: 58.33333%;
+                            .music-image {
+                                width: 595px;
+                                height: 449px;
+                                background-size: 595px 449px;
+                                background-repeat: no-repeat;
+                                position: relative;
+                                left: 50%;
+                                margin-left: -277px;
+                                background-image: url(https://www.apple.com.cn/iphone/home/images/overview/more-iphone/apple_music__djgc9tilelm6_large.jpg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

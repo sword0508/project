@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/navBtn.css">
+    <link rel="stylesheet" href="../css/index1.css">
+    <link rel="stylesheet" href="../css/index2.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../package/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../package/iconfont/iconfont.css">
+    <script src="../package/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 广告顶部位置 -->
+    <div class="adv-wrapper">
+        <div class="adv-wrapper-text">
+            <广告>
+        </div>
+    </div>
+    <!-- 导航栏1+搜索栏窗口+购物车窗口 -->
+    <nav id="ac-globalnav">
+        <div class="nav_content">
+            <ul class="nav nav-pills">
+                <li role="presentation">
+                    <a href="#"> <img src="../images/globalnav_apple_image__cxwwnrj0urau_large.svg" alt=""></a>
+
+                </li>
+                <li role="presentation"><a href="#">Mac</a></li>
+
+                <li role="presentation"><a href="#">iPad</a></li>
+                <li role="presentation"><a href="#" class="iphoneClick">iPhone</a></li>
+                <li role="presentation"><a href="#">Watch</a></li>
+                <li role="presentation"><a href="#">Music</a></li>
+                <li role="presentation"><a href="#">技术支持</a></li>
+                <li role="presentation">
+                    <a href="#">
+                        <i class="iconfont icon-fenleishousuo"></i>
+                    </a>
+                </li>
+                <li role="presentation"><a href="#"><i class="iconfont icon-gouwuche"></i></a></li>
+            </ul>
+            <!-- 搜索栏窗口 -->
+            <aside id="ac-gn-searchview">
+                <div class="ac-gn-searchview-content">
+                    <div class="ac-gn-searchview-bar">
+                        <div class="ac-gn-searchview-bar-wrapper">
+                            <form id="ac-gn-searchform" action="/search" method="get">
+                                <div class="ac-gn-searchform-wrapper">
+                                    <input class="ac-gn-searchform-input" type="text" aria-label="搜索 apple.com.cn" placeholder="搜索 apple.com.cn">
+                                    <input id="ac-gn-searchform-src" type="hidden" name="src" value="globalnav">
+                                    <button id="ac-gn-searchform-submit" type="submit" disabled="" aria-label="提交搜索"> </button>
+                                    <button id="ac-gn-searchform-reset" type="reset" disabled="" aria-label="清除搜索">
+                                            <span class="ac-gn-searchform-reset-background"></span>
+                                        </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <aside class="ac-gn-searchresults">
+                        <section class=" ac-gn-searchresults-section-defaultlinks">
+                            <div class="ac-gn-searchresults-section-wrapper">
+                                <h3 class="ac-gn-searchresults-header ">快速链接</h3>
+                                <ul class="ac-gn-searchresults-list">
+                                    <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/shop/goto/gifts/" class="ac-gn-searchresults-link">佳节好礼</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/retail/" class="ac-gn-searchresults-link">查找零售店</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item ">
+                                        <a href="https://www.apple.com.cn/shop/goto/shop" class="ac-gn-searchresults-link">Apple Store 商店在线选购</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/shop/goto/accessories/apple_accessories" class="ac-gn-searchresults-link">配件</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/airpods/" role="option" class="ac-gn-searchresults-link">AirPods</a>
+                                    </li>
+                                </ul>
+                                <span role="status" class="ac-gn-searchresults-count" aria-live="polite">5 快速链接</span>
+                            </div>
+                        </section>
+
+                        <!-- 搜索结果 -->
+                        <section class="ac-gn-searchresults-section">
+                            <div class="ac-gn-searchresults-section-wrapper">
+                                <h3 class="ac-gn-searchresults-header">搜索结果建议</h3>
+                                <ul class="ac-gn-searchresults-list">
+                                    <!-- <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/search/iPhone+%E4%BF%9D%E6%8A%A4%E5%A3%B3?src=globalnav" class="ac-gn-searchresults-link ac-gn-searchresults-link-suggestions"><b>iPhone</b> 保护壳</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item" role="presentation">
+                                        <a href="https://www.apple.com.cn/search/iPhone+%E5%85%85%E7%94%B5?src=globalnav" class="ac-gn-searchresults-link ac-gn-searchresults-link-suggestions"><b>iPhone</b> 充电</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item" role="presentation">
+                                        <a href="https://www.apple.com.cn/search/iPhone+%E5%B1%8F%E5%B9%95%E4%BF%9D%E6%8A%A4%E8%86%9C?src=globalnav" class="ac-gn-searchresults-link ac-gn-searchresults-link-suggestions"><b>iPhone</b> 屏幕保护膜</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item" role="presentation">
+                                        <a href="https://www.apple.com.cn/search/iPhone+%E6%99%BA%E8%83%BD%E7%94%B5%E6%B1%A0%E5%A3%B3?src=globalnav" class="ac-gn-searchresults-link ac-gn-searchresults-link-suggestions"><b>iPhone</b> 智能电池壳</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item" role="presentation">
+                                        <a href="https://www.apple.com.cn/search/iPhone+MagSafe+%E7%9A%AE%E9%9D%A9%E5%8D%A1%E5%8C%85?src=globalnav" class="ac-gn-searchresults-link ac-gn-searchresults-link-suggestions"><b>iPhone</b> MagSafe 皮革卡包</a>
+                                    </li> -->
+                                </ul>
+
+                            </div>
+                        </section>
+
+                    </aside>
+                </div>
+                <button class="ac-gn-searchview-close
+                " aria-label="取消搜索">
+                        <span class="ac-gn-searchview-close-wrapper">
+                            <span class="ac-gn-searchview-close-left"></span>
+                            <span class="ac-gn-searchview-close-right"></span>
+                        </span>
+                    </button>
+            </aside>
+        </div>
+
+        <!-- 点击购物车的窗口 -->
+
+        <aside class="ac-gn-bagview">
+            <p class="trangle"></p>
+            <div class="ac-gn-bagview-scrim">
+                <span class="ac-gn-bagview-caret"></span>
+            </div>
+            <div class="ac-gn-bagview-content">
+
+
+                <p class="ac-gn-bagview-message">
+                    你的购物袋是空的
+                </p>
+
+
+
+
+                <nav class="ac-gn-bagview-nav">
+                    <ul class="ac-gn-bagview-nav-list">
+                        <li class="ac-gn-bagview-nav-item">
+                            <a style="cursor: pointer;" class="ac-gn-bagview-nav-link ac-gn-bagview-nav-link-bag">
+                购物袋
+            </a>
+                        </li>
+                        <li class="ac-gn-bagview-nav-item">
+                            <a href="https://www.apple.com.cn/shop/favorites" class="ac-gn-bagview-nav-link ac-gn-bagview-nav-link-favorites">
+                收藏
+            </a>
+                        </li>
+                        <li class="ac-gn-bagview-nav-item">
+                            <a href="https://secure1.www.apple.com.cn/shop/order/list" class="ac-gn-bagview-nav-link ac-gn-bagview-nav-link-orders">
+                订单
+            </a>
+                        </li>
+                        <li class="ac-gn-bagview-nav-item">
+                            <a href="https://www.apple.com.cn/shop/account/home" class="ac-gn-bagview-nav-link ac-gn-bagview-nav-link-account"> 账户</a>
+                        </li>
+                        <li class="ac-gn-bagview-nav-item ac-gn-bagview-nav-item-signIn">
+                            <a style="cursor: pointer;" class="ac-gn-bagview-nav-link ac-gn-bagview-nav-link-signIn">
+                                登录
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </aside>
+
+    </nav>
+
+    <!-- 产品导航栏 -->
+    <nav id="chapternav">
+        <div id="chapternav-wrapper">
+            <ul class="chapternav-items">
+                <li>
+                    <a class="chapternav-link chapternav-link-12pro">
+                        <figure><img src="../images/nav/i12pro.svg" alt=""></figure>
+                        <span>iPhone 12 Pro</span>
+                        <span class="newProduct">新款</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="chapternav-link" href="/iphone-12-pro/">
+                        <figure><img src="../images/nav/i12.svg" alt=""></figure>
+                        <span>iPhone 12 </span>
+                        <span class="newProduct">新款</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="chapternav-link" href="/iphone-12-pro/">
+                        <figure><img src="../images/nav//se.svg" alt=""></figure>
+                        <span>iPhone SE</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="chapternav-link" href="/iphone-12-pro/">
+                        <figure><img src="../images/nav/i11.svg" alt=""></figure>
+                        <span>iPhone 11</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="chapternav-link" href="/iphone-12-pro/">
+                        <figure><img src="../images/nav/xr.svg" alt=""></figure>
+                        <span>iPhone X<p class="smallR" style=" font-variant-caps: all-small-caps;">R</p></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a class="chapternav-link" href="/iphone-12-pro/">
+                        <figure><img src="../images/nav/compare.svg" alt=""></figure>
+                        <span>机型比较</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="chapternav-link" href="/iphone-12-pro/">
+                        <figure><img src="../images/nav/airpods.svg" alt=""></figure>
+                        <span>AirPods</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="chapternav-link" href="/iphone-12-pro/">
+                        <figure><img src="../images/nav/peijian.svg" alt=""></figure>
+                        <span>配件</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="chapternav-link" href="/iphone-12-pro/">
+                        <figure><img src="../images/nav/ios.svg" alt=""></figure>
+                        <span>iOS 14</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- iphone12 lar大图 -->
+        <section class="section-hero">
+            <div class="largeIph12pro">
+                <div class="content-row">
+                    <div class="content-txt">
+                        <h2>iPhone 12 Pro</h2>
+                        <p class="hero-headline">自我再飞跃</p>
+                        <!-- RMB 354 -->
+                        <p class="hero-copytxt">
+                            RMB 354/月或 <span class="nowrap">RMB 8499 起，</span>还可折抵换购
+                            <sup class="footnote">
+                        <a href="" aria-label="脚注 1">1</a>
+                    </sup>。
+                        </p>
+                        <!-- 进一步了解 -->
+                        <ul class="links-moreConsult">
+                            <li class="cta-link">
+                                <a aria-label="进一步了解">
+                                    <span class="icon-copy">进一步了解</span>
+                                    <span class=" icon-after">></span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="preorder">
+                            <!-- 立即购买 -->
+                            <p class="preorder-cnalt">
+                                你可以立即在线
+                                <a href="/cn/shop/goto/buy_iphone/iphone_12_pro">购买</a>并享受免费送货服务，也可以<a href="https://reserve-prime.apple.com/CN/zh_CN/reserve/A/select?&iUP=N">预约</a>到附近的 <br>Apple Store 零售店
+                                <span class="nowrap">购买<a href="#footnote-6" class="footnote">+</a>。</span>
+                            </p>
+
+                            <!-- 如果你已经加入 -->
+                            <p class="preorder-cnalt-copy">
+                                如果你已加入 iPhone 年年焕新计划，请先查询你的升级换购资格，<br class="large-show">然后预约前往 Apple Store 零售店换购
+                                <span class="nowrap">新款 iPhone。</span>
+                            </p>
+                        </div>
+
+                        <!-- 查询升级 -->
+                        <p class="hero-cnalt-cta">
+                            <a href="https://secure.www.apple.com.cn/shop/eligibility/upgradeEligibilityDeviceList">
+                                <span class="icon-copy">查询升级换购资格</span>
+                                <span class="icon icon-after more">></span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="large-12">
+                        <figure class="hero-bgimage">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="largeIph12">
+                <div class="content-row">
+                    <div class="content-txt">
+                        <h2>iPhone 12</h2>
+                        <p class="hero-headline">升维大提速。</p>
+                        <!-- RMB 354 -->
+                        <p class="hero-copytxt">
+                            RMB 229/月或 <span class="nowrap">RMB 5499 起，</span>还可折抵换购
+                            <sup class="footnote">
+                        <a href="" aria-label="脚注 1">1</a>
+                    </sup>。
+                        </p>
+                        <!-- 进一步了解 -->
+                        <ul class="links-moreConsult">
+                            <li class="cta-link">
+                                <a href="" aria-label="进一步了解">
+                                    <span class="icon-copy">进一步了解</span>
+                                    <span class=" icon-after">></span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="preorder">
+                            <!-- 立即购买 -->
+                            <p class="preorder-cnalt">
+                                你可以立即在线
+                                <a href="/cn/shop/goto/buy_iphone/iphone_12_pro">购买</a>并享受免费送货服务，也可以<a href="https://reserve-prime.apple.com/CN/zh_CN/reserve/A/select?&iUP=N">预约</a>到附近的 <br>Apple Store 零售店
+                                <span class="nowrap">购买<a href="#footnote-6" class="footnote">+</a>。</span>
+                            </p>
+
+                            <!-- 如果你已经加入 -->
+                            <p class="preorder-cnalt-copy">
+                                如果你已加入 iPhone 年年焕新计划，请先查询你的升级换购资格，<br class="large-show">然后预约前往 Apple Store 零售店换购
+                                <span class="nowrap">新款 iPhone。</span>
+                            </p>
+                        </div>
+
+                        <!-- 查询升级 -->
+                        <p class="hero-cnalt-cta">
+                            <a href="https://secure.www.apple.com.cn/shop/eligibility/upgradeEligibilityDeviceList">
+                                <span class="icon-copy">查询升级换购资格</span>
+                                <span class="icon icon-after more">></span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="large-12">
+                        <figure class="hero-bgimage">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 比较各款 -->
+        <section class="section-compare">
+            <div class="section-content">
+                <h2 class="tile-headline">哪款 iPhone 适合你？</h2>
+                <div class="link-wrapper">
+                    <a href="" class="icon-wrapper">
+                        <span class="icon-copy">比较各款 iPhone 机型</span>
+                        <span class="icon-after">></span>
+                    </a>
+                </div>
+                <div class="compare-tableRow">
+                    <!-- iphone 12pro -->
+                    <div class="compare-column">
+                        <div class="column-content">
+                            <div class="content-wrapper">
+                                <!-- 产品图 -->
+                                <figure class="column-image"></figure>
+                                <h3 class="compare-headline">iPhone 12 Pro</h3>
+                                <p class="typography-body-reduced">RMB 8499 起</p>
+                                <!-- 产品介绍 -->
+                                <ul class="feature-list">
+                                    <li class="list-item">6.1 英寸或 6.7 英寸 <br> 超视网膜 XDR 显示屏
+                                        <sup class="footnote">
+                                        <a href="" aria-label="脚注 2">2</a>
+                                    </sup>
+                                    </li>
+                                    <li class="list-item">
+                                        5G 蜂窝网络
+                                        <sup class="footnote">
+                                            <a href="" aria-label="脚注 3">3</a>
+                                        </sup>
+                                    </li>
+                                    <li class="list-item">A14 仿生芯片</li>
+                                    <li class="list-item">Pro 级三摄系统
+                                        <br>(超广角、广角、长焦)
+                                    </li>
+                                    <li class="list-item">激光雷达扫描仪，可用于拍摄夜间模式人像，提升增强现实体验 </li>
+                                    <li class="list-item">兼容 MagSafe 磁吸配件</li>
+                                </ul>
+                            </div>
+                            <!-- 购买，了解 -->
+                            <div class="cta-wrapper">
+                                <div class="button-wrapper">
+                                    <a href="" class="button">购买</a>
+                                </div>
+                                <div class="compare-link">
+                                    <a href="" class="icon-wrapper">
+                                        <span>进一步了解</span>
+                                        <span>></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- iphone 12 -->
+                    <div class="compare-column">
+                        <div class="column-content">
+                            <div class="content-wrapper">
+                                <!-- 产品图 -->
+                                <figure class="column-image"></figure>
+                                <h3 class="compare-headline">iPhone 12</h3>
+                                <p class="typography-body-reduced">RMB 8499 起</p>
+                                <!-- 产品介绍 -->
+                                <ul class="feature-list">
+                                    <li class="list-item">6.1 英寸或 6.7 英寸 <br> 超视网膜 XDR 显示屏
+                                        <sup class="footnote">
+                                        <a href="" aria-label="脚注 2">2</a>
+                                    </sup>
+                                    </li>
+                                    <li class="list-item">
+                                        5G 蜂窝网络
+                                        <sup class="footnote">
+                                            <a href="" aria-label="脚注 3">3</a>
+                                        </sup>
+                                    </li>
+                                    <li class="list-item">A14 仿生芯片</li>
+                                    <li class="list-item">Pro 级三摄系统
+                                        <br>(超广角、广角、长焦)
+                                    </li>
+                                    <li class="list-item">激光雷达扫描仪，可用于拍摄夜间模式人像，提升增强现实体验 </li>
+                                    <li class="list-item">兼容 MagSafe 磁吸配件</li>
+                                </ul>
+                            </div>
+                            <!-- 购买，了解 -->
+                            <div class="cta-wrapper">
+                                <div class="button-wrapper">
+                                    <a href="" class="button">购买</a>
+                                </div>
+                                <div class="compare-link">
+                                    <a href="" class="icon-wrapper">
+                                        <span>进一步了解</span>
+                                        <span>></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- iphone 11 -->
+                    <div class="compare-column">
+                        <div class="column-content">
+                            <div class="content-wrapper">
+                                <!-- 产品图 -->
+                                <figure class="column-image"></figure>
+                                <h3 class="compare-headline">iPhone 11</h3>
+                                <p class="typography-body-reduced">RMB 8499 起</p>
+                                <!-- 产品介绍 -->
+                                <ul class="feature-list">
+                                    <li class="list-item">6.1 英寸或 6.7 英寸 <br> 超视网膜 XDR 显示屏
+                                        <sup class="footnote">
+                                        <a href="" aria-label="脚注 2">2</a>
+                                    </sup>
+                                    </li>
+                                    <li class="list-item">
+                                        5G 蜂窝网络
+                                        <sup class="footnote">
+                                            <a href="" aria-label="脚注 3">3</a>
+                                        </sup>
+                                    </li>
+                                    <li class="list-item">A14 仿生芯片</li>
+                                    <li class="list-item">Pro 级三摄系统
+                                        <br>(超广角、广角、长焦)
+                                    </li>
+                                    <li class="list-item">激光雷达扫描仪，可用于拍摄夜间模式人像，提升增强现实体验 </li>
+                                    <li class="list-item">兼容 MagSafe 磁吸配件</li>
+                                </ul>
+                            </div>
+                            <!-- 购买，了解 -->
+                            <div class="cta-wrapper">
+                                <div class="button-wrapper">
+                                    <a href="" class="button">购买</a>
+                                </div>
+                                <div class="compare-link">
+                                    <a href="" class="icon-wrapper">
+                                        <span>进一步了解</span>
+                                        <span>></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- iphone se -->
+                    <div class="compare-column">
+                        <div class="column-content">
+                            <div class="content-wrapper">
+                                <!-- 产品图 -->
+                                <figure class="column-image"></figure>
+                                <h3 class="compare-headline">iPhone se</h3>
+                                <p class="typography-body-reduced">RMB 8499 起</p>
+                                <!-- 产品介绍 -->
+                                <ul class="feature-list">
+                                    <li class="list-item">6.1 英寸或 6.7 英寸 <br> 超视网膜 XDR 显示屏
+                                        <sup class="footnote">
+                                        <a href="" aria-label="脚注 2">2</a>
+                                    </sup>
+                                    </li>
+                                    <li class="list-item">
+                                        5G 蜂窝网络
+                                        <sup class="footnote">
+                                            <a href="" aria-label="脚注 3">3</a>
+                                        </sup>
+                                    </li>
+                                    <li class="list-item">A14 仿生芯片</li>
+                                    <li class="list-item">Pro 级三摄系统
+                                        <br>(超广角、广角、长焦)
+                                    </li>
+                                    <li class="list-item">激光雷达扫描仪，可用于拍摄夜间模式人像，提升增强现实体验 </li>
+                                    <li class="list-item">兼容 MagSafe 磁吸配件</li>
+                                </ul>
+                            </div>
+                            <!-- 购买，了解 -->
+                            <div class="cta-wrapper">
+                                <div class="button-wrapper">
+                                    <a href="" class="button">购买</a>
+                                </div>
+                                <div class="compare-link">
+                                    <a href="" class="icon-wrapper">
+                                        <span>进一步了解</span>
+                                        <span>></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 新品好礼 -->
+        <section class="section-holiday-2020">
+            <div class="banner-wrapper">
+                <div class="banner-container">
+                    <!-- 文字部分 -->
+                    <div class="flex-copy-wrapper">
+                        <h3 class="tile-copy">新品好礼，心意即时送上。</h3>
+                        <p class="tile-cta-wrapper">
+                            <a href="" aria-label="选购节日好礼">
+                                <span>选购好礼</span>
+                                <span>></span>
+                            </a>
+                        </p>
+                    </div>
+                    <!-- 图片 -->
+                    <div class="flex-image-wrapper">
+                        <div class="image-wrapper">
+                            <figure class="banner-image"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 购买方式 -->
+        <section class="section-retail">
+            <h2 class="typography-section-headline">购买方法够多样</h2>
+            <div class="flex-tile-wrapper">
+                <div class="tile-wrapper">
+                    <div class="content-wrapper">
+                        <div class="copy-wrapper">
+                            <h3 class="typography-tile-headline">用智能手机来换购，<br>享受折抵优惠。</h3>
+                            <p class="typography-tile-copy">通过 Apple Trade In 换购计划，你可以用符合条件的智能手机来换购新 iPhone，享受折抵<span class="nowrap">优惠<sup class="footnote"><a href="#footnote-4" class="icon-wrapper" aria-label="脚注 4">4</a></sup>。</span>这样一来，你受益，地球也受益。</p>
+                            <p class="tile-cta"><a href="/cn/shop/goto/trade_in" class="icon-wrapper"><span>进一步了解</span><span >></span></a></p>
+                        </div>
+                        <div class="image-wrapper">
+                            <figure class="trade-in-image"></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile-wrapper">
+                    <div class="content-wrapper">
+                        <div class="copy-wrapper">
+                            <h3 class="typography-tile-headline">升级到新款 iPhone，轻轻松松。</h3>
+                            <p class="typography-tile-copy">加入 iPhone 年年焕新计划，年年用上新 iPhone，享受 AppleCare+ 服务计划，还可选择分期付款<span class="nowrap"><sup class="footnote"><a href="#footnote-5" aria-label="脚注 5"   class="icon-wrapper" >5</a></sup>。</span></p>
+                            <p class="tile-cta"><a href="/cn/shop/goto/iphone/iphone_upgrade_program" class="icon-wrapper"><span >进一步了解</span><span>></span></a></p>
+                        </div>
+                        <div class="image-wrapper">
+                            <figure class="upgrade-image"></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile-wrapper">
+                    <div class="content-wrapper-large">
+                        <div class="copy-wrapper">
+                            <h3 class="typography-tile-headline">在 Apple 购买，<br>好处多多。</h3>
+                            <p class="typography-tile-copy">你可以选择适合自己的付款方式，通过 Apple Trade&nbsp;In 换购计划享受折抵优惠，快速搞定各项设置，<br class="small-hide">还可以和 Specialist 专家沟通交流。</p>
+                            <p class="tile-cta"><a href="/iphone/buy/" data-analytics-title="why apple is the best place to buy" data-analytics-region="learn more" aria-label="进一步了解在 Apple 购买 iphone" class="icon-wrapper"><span class="icon-copy">进一步了解</span><span class="icon-after more">></span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 推荐配件+选购 -->
+        <section class="section-accessories">
+            <h2 class="typography-section-headline">推荐配件</h2>
+            <div class="tile-full">
+                <div class="copy-wrapper">
+                    <h3 class="typography-headline">MagSafe</h3>
+                    <p class="tile-copy">磁吸式保护壳、卡包轻松贴，一起贴也没问题。无线充电也更快捷。</p>
+                    <ul class="links-stacked">
+                        <li class="tile-cta"><a href="/cn/shop/goto/accessories/magsafe" class="icon-wrapper"><span>选购 MagSafe 磁吸配件</span><span>></span></a></li>
+                    </ul>
+                </div>
+                <div class="tile-image-container">
+                    <figure class="tile-image"></figure>
+                </div>
+            </div>
+            <div class="tile-full-plus">
+                <div class="copy-wrapper">
+                    <h3 class="typography-headline">AirPods</h3>
+                    <p class="tile-copy">AirPods 的镌刻又有新玩法，<br class="large">文字、数字和表情符号现在能混搭，<span class="nowrap">来试试吧。</span></p>
+                    <ul class="links-stacked">
+                        <li class="tile-cta"><a href="/cn/shop/goto/select_airpods" class="icon-wrapper"><span>选购</span><span>></span></a></li>
+                        <li class="tile-cta"><a href="/cn/shop/engraving-and-gift-wrap" class="icon-wrapper"><span>进一步了解</span><span>></span></a></li>
+                    </ul>
+                </div>
+                <div class="tile-image-container">
+                    <figure class="engraving-image"></figure>
+                </div>
+            </div>
+            <!-- 选购配件 -->
+            <div class="accessories-cta">
+                <a href="/cn/shop/goto/iphone/accessories" class="icon-wrapper"><span>选购各种 iPhone 配件</span><span>></span></a>
+            </div>
+        </section>
+        <!-- 售后服务 -->
+        <section class="section-buystrip">
+            <div class="buystrip-wrapper">
+                <div class="flex-wrapper">
+                    <!-- medium width alt -->
+                    <div class="buystrip-tile">
+                        <figure class="image-icon"></figure>
+                        <h2 class="typography-buystrip-headline">免费送货</h2>
+                        <div class="typography-tile-copy">
+                            <p>享受免费送货上门服务，还可在结账时查看送达<span class="nowrap">日期。</span></p>
+                            <p><a href="/cn/shop/goto/shipping_and_returns" data-analytics-title="learn more about free delivery" aria-label="进一步了解免费送货" class="icon-wrapper"><span>进一步了解</span><span>></span></a></p>
+                        </div>
+                    </div>
+                    <div class="buystrip-tile">
+                        <figure class="image-icon"></figure>
+                        <h2 class="typography-buystrip-headline">分期付款</h2>
+                        <div class="typography-tile-copy">
+                            <p>符合条件的信用卡用户可选择<br>灵活的分期付款<span class="nowrap">方式。</span></p>
+                            <p><a href="/cn/shop/goto/ww/financing" data-analytics-title="learn more about financing" data-analytics-region="learn more" aria-label="进一步了解分期付款。" class="icon-wrapper"><span>进一步了解</span><span>></span></a></p>
+                        </div>
+                    </div>
+                    <div class="buystrip-tile">
+                        <figure class="image-icon"></figure>
+                        <h2 class="typography-buystrip-headline">获得购买帮助</h2>
+                        <div class="typography-tile-copy">
+                            <p>有问题吗？致电 Specialist 专家或进行在线交流。致电 <span class="nowrap">400-666-8800</span></p>
+                            <p><a href="https://contactretail.apple.com.cn/?pg=COM:iphone-11-pro&amp;ap=COM&amp;c=cn&amp;l=zh" data-analytics-title="learn more about personal sessions" aria-label="进一步了解专人在线辅导" id="contact" class="icon-wrapper"><span>联系我们</span><span>></span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- iphone那么不一样 -->
+        <section class="section-why-iphone">
+            <h2 class="typography-section-headline">为什么 iPhone <br class="large-hide">就是那么不一样？</h2>
+            <div class="flex-tile-wrapper">
+                <div class="tile-wrapper">
+                    <div class="banner-container">
+                        <div class="flex-copy-wrapper">
+                            <h2 class="typography-tile-eyebrow">iOS&nbsp;14</h2>
+                            <p class="typography-tile-headline">这种新感觉，<br>一点不陌生。</p>
+                            <a href="/ios/ios-14/" class="icon-wrapper"><span>进一步了解</span><span>></span></a> </div>
+                        <div class="image-wrapper">
+                            <figure class="ios-14-image"></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile-wrapper-left">
+                    <div class="background-wrapper">
+                        <div class="content-wrapper">
+                            <div class="tile-copy-wrapper">
+                                <h3 class="tile-headline">换成 iPhone</h3>
+                                <p class="tile-copy">超多理由，超方便。</p>
+                                <a href="/iphone/switch/" class="icon-wrapper"><span">进一步了解</span><span>></span></a>
+                            </div>
+                            <div class="image-wrapper">
+                                <figure class="image-why-switch"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile-wrapper-right">
+                    <div class="background-wrapper">
+                        <div class="content-wrapper">
+                            <div class="tile-copy-wrapper">
+                                <div class="image-wrapper">
+                                    <figure class="image-privacy"></figure>
+                                </div>
+                                <h3 class="tile-headline">隐私</h3>
+                                <p class="tile-copy">什么可以分享，理应由你做主。</p>
+                                <a href="/privacy/" class="icon-wrapper"><span">进一步了解</span><span>></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 尽享iphone精彩 -->
+        <section class="section-more-iphone">
+            <h2 class="typography-section-headline">尽享 iPhone 的精彩。</h2>
+            <div class="flex-tile-wrapper">
+                <!-- 添创意 -->
+                <div class="tile-wrapper">
+                    <div class="content-wrapper">
+                        <div class="copy-wrapper">
+                            <h2 class="typography-eyebrow">Today at Apple</h2>
+                            <p class="typography-tile-headline" aria-label="为节日添创意" role="text">为节日添创意</p>
+                            <p class="typography-tile-copy" aria-label="用 iPhone 创作别具一格的暖心好礼" role="text">用 iPhone 创作别具一格的暖心好礼。</p>
+                            <p class="tile-cta"><a href="/today/collection/make-your-holiday/" class="icon-wrapper"><span class="icon-copy">立即开始</span><span>></span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 叮一声 -->
+                <div class="tile-wrapper-Middle">
+                    <div class="banner-container">
+                        <div class="flex-copy-wrapper">
+                            <div class="tile-headline-image">
+                                <h2 class="typography-tile-headline">Apple&nbsp;Pay</h2>
+                            </div>
+                            <h3 class="typography-tile-headline">叮一声，<br><span class="nowrap">更多城市都通行。</span></h3>
+                            <a href="/apple-pay/transit/" class="icon-wrapper"><span>进一步了解</span><span>></span></a>
+                        </div>
+                        <div class="banner-image-wrapper">
+                            <figure class="apple-pay-image">
+                                <a href="/apple-pay/transit/" class="block"></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- Apple Music -->
+                <div class="tile-wrapper-End">
+                    <div class="content-wrapper">
+                        <div class="copy-wrapper">
+                            <div class="tile-headline-image">
+                                <h2 class="typography-tile-headline">Apple&nbsp;Music</h2>
+                            </div>
+                            <p class="tile-copy">上千万首歌，三个月免费听。</p>
+                            <ul class="links-stacked">
+                                <li class="tile-cta"><a href="https://music.apple.com/deeplink?app=music&amp;p=subscribe&amp;at=1000l4QJ&amp;ct=417&amp;itscg=10000&amp;itsct=417n" class="icon-wrapper"><span><span>开始试用</span><sup class="footnote">6</sup>
+								</span><span>></span></a></li>
+                                <li class="tile-cta"><a href="/apple-music/" class="icon-wrapper"><span>进一步了解</span><span>></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="image-wrapper">
+                            <figure class="music-image"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="ac-globalfooter">
+        <div class="ac-gf-content">
+            <h2 class="ac-gf-label">Apple Footer</h2>
+            <section class="ac-gf-sosumi">
+                <ol>
+                    <li id="footnote-1">上述所示分期付款金额仅为使用特定期数免息分期付款估算得出的示例（仅显示整数数额，未显示小数点以后的金额)，实际支付金额以银行或花呗账单为准。最高可享 24 期免息分期，到 Apple Store 零售店和在线商店购买时可享受的免息分期期数和最低限额可能有所不同，银行和花呗提供的免息分期期数和最低限额可能有所不同。实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区。银行或花呗可能要求你的可用信用额度大于所购买产品的总金额，才能使用分期付款服务。有关信用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Apple
+                        对此不做任何承诺和保证。Apple 的折抵换购服务为 Apple 与 Apple 折抵服务合作伙伴共同推出，年满 18 周岁及以上者才能享受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件 (当地法律可能会要求存储该信息)。可能需要遵守 Apple 或 Apple 折抵服务合作伙伴的其他条款。本折抵换购服务不能与 Apple 的其他优惠或折扣活动同时使用。如需了解更多免息分期付款信息，请点击<a href="https://www.apple.com.cn/shop/browse/finance/installment">此处</a>。</li>
+                    <li id="footnote-2">显示屏采用曲线优美的圆角设计，四个圆角位于一个标准矩形内。按照标准矩形测量时，屏幕的对角线长度是 5.42 英寸 (iPhone&nbsp;12&nbsp;mini)、6.06 英寸 (iPhone&nbsp;12&nbsp;Pro、iPhone&nbsp;12、iPhone&nbsp;11) 或 6.68 英寸 (iPhone&nbsp;12&nbsp;Pro&nbsp;Max)。实际可视区域较小。</li>
+                    <li id="footnote-3">需要使用数据计划。5G 和 LTE 功能适用于特定国家或地区的特定运营商。速度基于现场状况和不同运营商而可能有所差异。有关 5G 和 LTE 支持的详情，请联系你的运营商并查看 <a href="/iphone/cellular/">apple.com.cn/iphone/cellular</a>。</li>
+                    <li id="footnote-4">实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区。年满 18 周岁及以上者才可参与本计划。该服务可能仅在部分 Apple&nbsp;Store 零售店提供，并且仅限于部分符合条件的设备。Apple 或其折抵服务合作伙伴保留出于任何原因拒绝或限制任何设备 (及其数量) 的权利。店内折抵需出示政府颁发并附有照片的有效身份证件 (当地法律可能会要求存储该信息)。现有设备的折抵金额可用于冲抵购买新的 Apple 设备。其他条款请参见 <a href="/cn/shop/goto/trade_in">apple.com.cn/trade-in</a>。</li>
+                    <li id="footnote-5">只有符合 Apple 指定条件的 iPhone 才可参与本计划。</li>
+                    <li id="footnote-6">免费试用期结束后，每月收费 RMB&nbsp;10。无需合约。当试用期结束后，会员方案将按月自动续订，直至取消订阅。</li>
+                </ol>
+                <ul>
+                    <li id="footnote-7">† 于 Apple Store 零售店购买须提前在线预约。</li>
+                </ul>
+            </section>
+            <nav class="ac-gf-breadcrumbs">
+                <a href="/" class="ac-gf-breadcrumbs-home">
+                    Apple  >
+                </a>
+                <div class="ac-gf-breadcrumbs-path">
+                    <ol class="ac-gf-breadcrumbs-list" vocab="http://schema.org/" typeof="BreadcrumbList">
+                        <li class="ac-gf-breadcrumbs-item" property="itemListElement" typeof="ListItem">
+                            <span property="name">iPhone</span>
+                            <meta property="position" content="1">
+                        </li>
+                    </ol>
+                </div>
+            </nav>
+            <nav class="ac-gf-directory" aria-label="Apple 网站目录" role="navigation">
+                <!--googleoff: all-->
+                <div class="ac-gf-directory-column">
+                    <!-- <input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-products"> -->
+                    <div class="ac-gf-directory-column-section">
+                        <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-products">
+		<h3 class="ac-gf-directory-column-section-title">选购及了解</h3>
+	</label>
+                        <ul class="ac-gf-directory-column-section-list">
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/mac/" data-analytics-title="mac">Mac</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/ipad/" data-analytics-title="ipad">iPad</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/iphone/" data-analytics-title="iphone">iPhone</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/watch/" data-analytics-title="watch">Watch</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/music/" data-analytics-title="music">Music</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/airpods/" data-analytics-title="airpods">AirPods</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/homepod/" data-analytics-title="homepod">HomePod</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/ipod-touch/" data-analytics-title="ipod touch">iPod touch</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/cn/shop/goto/buy_accessories" data-analytics-title="accessories">配件</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/cn/shop/goto/giftcards" data-analytics-title="gift cards">App Store 充值卡</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ac-gf-directory-column">
+                    <div class="ac-gf-directory-column-section">
+                        <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-services">
+		<h3 class="ac-gf-directory-column-section-title">服务</h3>
+	</label>
+                        <ul class="ac-gf-directory-column-section-list">
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-music/" data-analytics-title="apple music">Apple&nbsp;Music</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/icloud/" data-analytics-title="icloud">iCloud</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-pay/" data-analytics-title="apple pay">Apple&nbsp;Pay</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/app-store/" data-analytics-title="app store">App&nbsp;Store</a></li>
+                        </ul>
+                    </div>
+                    <div class="ac-gf-directory-column-section">
+                        <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-accounts">
+		<h3 class="ac-gf-directory-column-section-title">账户</h3>
+	</label>
+
+                        <ul class="ac-gf-directory-column-section-list">
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="https://appleid.apple.com/cn/" data-analytics-title="manage your apple id" data-analytics-exit-link="">管理你的 Apple ID</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/cn/shop/goto/account" data-analytics-title="apple store account">Apple Store 账户</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="https://www.icloud.com" data-analytics-title="icloud.com" data-analytics-exit-link="">iCloud.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ac-gf-directory-column">
+                    <div class="ac-gf-directory-column-section">
+                        <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-storeservices">
+		<h3 class="ac-gf-directory-column-section-title">Apple Store 商店</h3>
+	</label>
+                        <ul class="ac-gf-directory-column-section-list">
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/retail/" data-analytics-title="find a store">查找零售店</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/cn/shop/goto/shop" data-analytics-title="shop online">在线选购</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/retail/geniusbar/" data-analytics-title="genius bar">Genius Bar 天才吧</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/today/" data-analytics-title="today at apple">Today at Apple</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/today/camp/" data-analytics-title="apple camp">Apple 夏令营</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="https://itunes.apple.com/cn/app/apple-store/id375380948?pt=2003&amp;ct=footer&amp;mt=8" data-analytics-title="apple store app" data-analytics-exit-link="">Apple Store App</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/cn/shop/goto/special_deals" data-analytics-title="refurbished and clearance">翻新和优惠</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/cn/shop/goto/ww/financing" data-analytics-title="financing">分期付款</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/cn/shop/goto/trade_in" data-analytics-title="apple trade in">Apple&nbsp;Trade&nbsp;In 换购计划</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/cn/shop/goto/order/list" data-analytics-title="order status">订单状态</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/cn/shop/goto/help" data-analytics-title="shopping help">选购帮助</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ac-gf-directory-column">
+                    <div class="ac-gf-directory-column-section">
+                        <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-business">
+		<h3 class="ac-gf-directory-column-section-title">商务应用</h3>
+	</label>
+                        <ul class="ac-gf-directory-column-section-list">
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/business/" data-analytics-title="apple and business">Apple 与商务</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/retail/business/" data-analytics-title="shop for business">商务选购</a></li>
+                        </ul>
+                    </div>
+                    <div class="ac-gf-directory-column-section">
+                        <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-education">
+		<h3 class="ac-gf-directory-column-section-title">教育应用</h3>
+	</label>
+                        <ul class="ac-gf-directory-column-section-list">
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/education/" data-analytics-title="apple and education">Apple 与教育</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/cn/shop/goto/educationrouting" data-analytics-title="shop for university">高校师生选购</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ac-gf-directory-column">
+                    <div class="ac-gf-directory-column-section">
+                        <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-responsibility">
+		<h3 class="ac-gf-directory-column-section-title">Apple 价值观</h3>
+	</label>
+
+                        <ul class="ac-gf-directory-column-section-list">
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/accessibility/" data-analytics-title="accessibility">辅助功能</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/environment/" data-analytics-title="environment">环境责任</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/privacy/" data-analytics-title="privacy">隐私</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/supplier-responsibility/" data-analytics-title="supplier responsibility">供应商责任</a></li>
+                        </ul>
+                    </div>
+                    <div class="ac-gf-directory-column-section">
+                        <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-about">
+		<h3 class="ac-gf-directory-column-section-title">关于 Apple</h3>
+	</label>
+                        <ul class="ac-gf-directory-column-section-list">
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/newsroom/" data-analytics-title="newsroom">Newsroom</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/leadership/" data-analytics-title="apple leadership">Apple 管理层</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="https://www.apple.com/jobs/cn/" data-analytics-title="job opportunities" data-analytics-exit-link="">工作机会</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/job-creation/" data-analytics-title="job creation">创造就业</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-events/" data-analytics-title="events">活动</a></li>
+                            <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/contact/" data-analytics-title="contact apple">联系 Apple</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--googleon: all-->
+            </nav>
+
+            <section class="ac-gf-footer">
+                <div class="ac-gf-footer-shop" x-ms-format-detection="none">
+                    更多选购方式：<a href="/retail/" data-analytics-title="find an apple store">查找你附近的 Apple Store 零售店</a>及<a href="https://locate.apple.com/cn/zh/" data-analytics-title="other retailers or resellers" data-analytics-exit-link="">更多门店</a>，
+                    <span class="nowrap">或者致电 400-666-8800。</span>
+                </div>
+                <div class="ac-gf-footer-legal">
+                    <div class="ac-gf-footer-legal-copyright">Copyright © 2020 Apple Inc. 保留所有权利。</div>
+                    <div class="ac-gf-footer-legal-links">
+                        <a class="ac-gf-footer-legal-link" href="/legal/privacy/" data-analytics-title="privacy policy">隐私政策</a>
+                        <a class="ac-gf-footer-legal-link" href="/legal/internet-services/terms/site.html" data-analytics-title="terms of use">使用条款</a>
+                        <a class="ac-gf-footer-legal-link" href="/cn/shop/goto/help/sales_refunds" data-analytics-title="sales and refunds">销售政策</a>
+                        <a class="ac-gf-footer-legal-link" href="/legal/" data-analytics-title="legal">法律信息</a>
+                        <a class="ac-gf-footer-legal-link" href="/sitemap/" data-analytics-title="site map">网站地图</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+
+    <script src="../package/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/navBtn.js"></script>
+    <script src="../js/carBtn.js"></script>
+    <script src="../js/iphone.js"></script>
+    <script src="../js/indexx.js"></script>
+</body>
+
+</html>

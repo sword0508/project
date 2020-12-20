@@ -1,0 +1,9 @@
+css样式：boosstrap
+轮播图：swiper
+表单验证插件：jq的validate
+分页插件：jq的pagination
+请求数据：ajax
+电商放大镜：enlarge
+验证码：gverify
+老师的分页插件:pagination
+收集统筹：utils

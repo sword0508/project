@@ -1,0 +1,977 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    position: relative;
+    // border: 1px solid transparent;
+    margin-top: -1px;
+    min-width: 320px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: #f2f2f2;
+    // 广告顶部位置
+    .adv-wrapper {
+        position: absolute;
+        background: #444;
+        line-height: 1;
+        // top: -40px;
+        // font-size: 17px;
+        width: 100%;
+        right: 0;
+        height: 40px;
+        z-index: 9999;
+        .adv-wrapper-text {
+            color: #a8a8aa;
+            font-size: 12px;
+            font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin-left: auto;
+            width: auto;
+            padding: 0 22px;
+            position: relative;
+            left: 0;
+            padding-left: calc(max(22px, env(safe-area-inset-left)));
+            padding-right: calc(max(22px, env(safe-area-inset-right)));
+            // color: #a8a8aa;
+            display: block;
+            line-height: 40px;
+            overflow: hidden;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            text-align: right;
+            max-width: 976px;
+            margin: 0 auto;
+        }
+    }
+    // 导航栏1
+    #ac-globalnav {
+        position: absolute;
+        top: 40px;
+        background-color: black;
+        height: 44px;
+        width: 100%;
+        .nav_content {
+            // width: 1024px;
+            max-width: 1024px;
+            padding: 0 22px;
+            position: relative;
+            z-index: 2;
+            margin: 0 auto;
+            ul {
+                cursor: default;
+                margin: 0 -10px;
+                width: auto;
+                height: 44px;
+                display: flex;
+                justify-content: space-between;
+                user-select: none;
+                li {
+                    padding: 0 18px;
+                    position: relative;
+                    height: 44px;
+                    z-index: 1;
+                    a {
+                        padding: 0 20px;
+                        line-height: 44px;
+                        white-space: nowrap;
+                        i {
+                            font-size: 25px;
+                            // background-color: seagreen;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 产品导航栏
+    #chapternav {
+        width: 100%;
+        top: 84px;
+        padding: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: center;
+        height: 100%;
+        z-index: 97;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 8px;
+        background-color: #0a0a0e;
+        #chapternav-wrapper {
+            position: relative;
+            height: 100%;
+            z-index: 1;
+            .chapternav-items {
+                margin: 0 34px;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                white-space: nowrap;
+                list-style: none;
+                padding-bottom: 9px;
+                li:first-child {
+                    margin-left: 0;
+                    padding-left: 4px;
+                }
+                li {
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 0 -.11765em;
+                    padding: 0 20px;
+                    &:hover {
+                        a span {
+                            color: #2997FF;
+                        }
+                    }
+                    .chapternav-link {
+                        display: block;
+                        padding: 0;
+                        margin-top: 3px;
+                        position: relative;
+                        z-index: 1;
+                        text-decoration: none;
+                        figure {
+                            display: block;
+                            margin: 0 auto 7px;
+                            height: 54px;
+                            img {
+                                width: 37px;
+                                height: 100%;
+                            }
+                        }
+                        span {
+                            font-family: "SF Pro SC", "SF Pro Text";
+                            color: rgb(245, 245, 247);
+                            direction: ltr;
+                            display: block;
+                            font-size: 12px;
+                            list-style: 0px;
+                            .smallR {
+                                display: inline-block;
+                            }
+                        }
+                        .newProduct {
+                            font-size: 10px;
+                            color: #bf4800;
+                            line-height: 1.2em;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 100%;
+                            height: 17px;
+                            // display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #main {
+        margin-top: -116px;
+        border-top: 116px solid black;
+        position: relative;
+        // z-index: -1;
+        // iphone12 lar大图
+        .section-hero {
+            overflow: hidden;
+            display: block;
+            font-family: "SF Pro SC", "SF Pro Text";
+            text-align: center;
+            position: relative;
+            top: 84px;
+            .largeIph12pro {
+                padding-top: 145px;
+                padding-bottom: 75px;
+                flex-basis: 100%;
+                max-width: 100%;
+                text-align: center;
+                background-color: #000;
+                color: #f5f5f7;
+                .content-row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 980px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    color: #f5f5f7;
+                    .content-txt {
+                        box-sizing: border-box;
+                        margin-bottom: 50px;
+                        height: 490px;
+                        margin-left: 189.96px;
+                        margin-right: 189.96px;
+                        flex-basis: 68.34%;
+                        max-width: 68.34%;
+                        font-size: 24px;
+                        font-weight: 400;
+                        direction: ltr;
+                        line-height: 35.2942px;
+                        text-align: center;
+                        font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                        h2 {
+                            color: #f5f5f7;
+                            font-size: 24px;
+                            line-height: 1.16667;
+                            font-weight: 600;
+                            margin-bottom: 0;
+                            letter-spacing: .009em;
+                        }
+                        .hero-headline {
+                            margin-top: 9px;
+                            padding-left: 0.4em;
+                            letter-spacing: 0;
+                            font-size: 48px;
+                            line-height: 1.08349;
+                            font-weight: 600;
+                            margin-bottom: 0;
+                        }
+                        // <!-- RMB 354 -->
+                        .hero-copytxt {
+                            margin-top: 25px;
+                            font-size: 21px;
+                            line-height: 1.381;
+                            font-weight: 400;
+                            margin-bottom: 0;
+                            letter-spacing: 0.11em;
+                            color: #f5f5f7;
+                            .nowrap {
+                                text-decoration: inherit;
+                                white-space: nowrap;
+                            }
+                            .footnote {
+                                color: inherit;
+                                vertical-align: inherit;
+                                top: -0.5em;
+                                position: relative;
+                                font-size: 0.6em;
+                                &:hover {
+                                    color: #2997FF;
+                                }
+                                ;
+                                a {
+                                    color: inherit;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        // 进一步了解
+                        .links-moreConsult {
+                            flex-direction: column;
+                            margin-top: 29px;
+                            display: flex;
+                            justify-content: center;
+                            margin-left: 0;
+                            margin-right: 0;
+                            list-style: none;
+                            .cta-link:first-child {
+                                margin-top: 0;
+                            }
+                            .cta-link {
+                                margin: 0 19px;
+                                a {
+                                    color: #2997ff;
+                                    text-decoration-style: solid;
+                                    cursor: pointer;
+                                    letter-spacing: .0.264px;
+                                    font-weight: 400;
+                                    line-height: 33.144px;
+                                    text-align: center;
+                                    font-size: 24px;
+                                    .icon-after {
+                                        display: inline;
+                                        color: #2997FF;
+                                    }
+                                }
+                            }
+                        }
+                        .preorder {
+                            margin-top: 19px;
+                            font-size: 24px;
+                            line-height: 35.2942px;
+                            // 立即购买
+                            .preorder-cnalt {
+                                margin-top: 6px;
+                                margin-bottom: 0;
+                                color: #86868b;
+                                font-size: 17px;
+                                font-weight: 400;
+                                a {
+                                    color: #2997ff;
+                                    text-decoration-style: solid;
+                                    cursor: pointer;
+                                }
+                                .nowrap {
+                                    white-space: nowrap;
+                                    .footnote {
+                                        cursor: pointer;
+                                        text-decoration: none;
+                                        color: inherit;
+                                        vertical-align: inherit;
+                                        box-sizing: border-box;
+                                        line-height: 0;
+                                        vertical-align: inherit;
+                                        top: -0.2em;
+                                        position: relative;
+                                        &:hover {
+                                            color: #2997FF;
+                                        }
+                                    }
+                                }
+                            }
+                            // 如果你已经加入
+                            .preorder-cnalt-copy {
+                                margin-top: 20px;
+                                color: #86868b;
+                                font-size: 17px;
+                                font-weight: 400;
+                                line-height: 35.2942px;
+                                margin-block-start: 20px;
+                                margin-block-end: 0;
+                                text-align: center;
+                                .large-show {
+                                    display: block;
+                                }
+                                .nowrap {
+                                    display: inline-block;
+                                    text-decoration: inherit;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                        // 查询升级
+                        .hero-cnalt-cta {
+                            margin-top: 6px;
+                            font-size: 17px;
+                            a {
+                                color: #2997ff;
+                                text-decoration-style: solid;
+                                cursor: pointer;
+                                icon-copy {
+                                    font-weight: 400px;
+                                    line-height: 35.2942px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    .large-12 {
+                        flex-basis: 100%;
+                        max-width: 100%;
+                        // width: 980px;
+                        height: 530px;
+                        .hero-bgimage {
+                            width: 1346px;
+                            height: 530px;
+                            background-size: 1346px 530px;
+                            background-repeat: no-repeat;
+                            background-image: url(https://www.apple.com.cn/v/iphone/home/ar/images/overview/hero/iphone_12_pro__f7wokw1n4lm6_large.jpg);
+                            position: relative;
+                            left: 50%;
+                            margin-left: -426px;
+                        }
+                    }
+                }
+            }
+            .largeIph12 {
+                padding-top: 75px;
+                padding-bottom: 80px;
+                flex-basis: 100%;
+                max-width: 100%;
+                text-align: center;
+                // background-color: #000;
+                // background-color: rgba(29, 29, 31, 0.05);
+                .content-row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 692px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    // color: #f5f5f7;
+                    .content-txt {
+                        box-sizing: border-box;
+                        margin-bottom: 50px;
+                        margin-left: 76px;
+                        margin-right: 76px;
+                        flex-basis: 78.0347%;
+                        max-width: 78.0347%;
+                        font-size: 24px;
+                        font-weight: 400;
+                        direction: ltr;
+                        line-height: 25px;
+                        text-align: center;
+                        font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                        h2 {
+                            // color: #f5f5f7;
+                            font-size: 21px;
+                            // line-height: 25px;
+                            font-weight: 600;
+                            margin-bottom: 0;
+                            letter-spacing: .231px;
+                        }
+                        .hero-headline {
+                            margin-top: 11px;
+                            padding-left: 28.6px;
+                            letter-spacing: 0;
+                            font-size: 44px;
+                            line-height: 48px;
+                            font-weight: 600;
+                            margin-bottom: 0;
+                        }
+                        // <!-- RMB 354 -->
+                        .hero-copytxt {
+                            margin-top: 23px;
+                            font-size: 17px;
+                            line-height: 25px;
+                            font-weight: 400;
+                            margin-bottom: 0;
+                            letter-spacing: 0.11em;
+                            // color: #f5f5f7;
+                            .nowrap {
+                                text-decoration: inherit;
+                                white-space: nowrap;
+                            }
+                            .footnote {
+                                color: inherit;
+                                vertical-align: inherit;
+                                top: -0.5em;
+                                position: relative;
+                                font-size: 0.6em;
+                                &:hover {
+                                    color: #06c;
+                                }
+                                a {
+                                    color: inherit;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        // 进一步了解
+                        .links-moreConsult {
+                            flex-direction: column;
+                            margin-top: 29px;
+                            display: flex;
+                            justify-content: center;
+                            margin-left: 0;
+                            margin-right: 0;
+                            list-style-position: outside;
+                            .cta-link:first-child {
+                                margin-top: 0;
+                            }
+                            .cta-link {
+                                margin: 0 19px;
+                                a {
+                                    color: #06c;
+                                    // text-decoration: none;
+                                    text-decoration-style: solid;
+                                    cursor: pointer;
+                                    letter-spacing: .0.264px;
+                                    font-weight: 400;
+                                    line-height: 25px;
+                                    text-align: center;
+                                    font-size: 17px;
+                                    .icon-after {
+                                        display: inline;
+                                        color: #06c;
+                                    }
+                                }
+                            }
+                        }
+                        .preorder {
+                            margin-top: 15px;
+                            font-size: 17px;
+                            color: #86868b;
+                            margin-left: auto;
+                            margin-right: auto;
+                            line-height: 25px;
+                            text-align: center;
+                            // 立即购买
+                            .preorder-cnalt {
+                                margin-top: 6px;
+                                margin-bottom: 0;
+                                font-size: 17px;
+                                font-weight: 400;
+                                margin-block-start: 25px;
+                                a {
+                                    color: #06c;
+                                    text-decoration-style: solid;
+                                    cursor: pointer;
+                                }
+                                .nowrap {
+                                    white-space: nowrap;
+                                    .footnote {
+                                        cursor: pointer;
+                                        text-decoration: none;
+                                        color: inherit;
+                                        vertical-align: inherit;
+                                        box-sizing: border-box;
+                                        line-height: 0;
+                                        vertical-align: inherit;
+                                        top: -0.2em;
+                                        position: relative;
+                                        &:hover {
+                                            color: #2997FF;
+                                        }
+                                    }
+                                }
+                            }
+                            // 如果你已经加入
+                            .preorder-cnalt-copy {
+                                margin-top: 20px;
+                                color: #86868b;
+                                // font-size: 17px;
+                                font-weight: 400;
+                                // line-height: 25px;
+                                margin-block-start: 20px;
+                                margin-block-end: 0;
+                                text-align: center;
+                                .large-show {
+                                    display: block;
+                                }
+                                .nowrap {
+                                    display: inline-block;
+                                    text-decoration: inherit;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                        // 查询升级
+                        .hero-cnalt-cta {
+                            margin-top: 6px;
+                            font-size: 17px;
+                            line-height: 25px;
+                            margin-block-start: 6px;
+                            a {
+                                color: #06c;
+                                text-decoration-style: solid;
+                                cursor: pointer;
+                                icon-copy {
+                                    font-weight: 400px;
+                                    line-height: 35.2942px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    .large-12 {
+                        flex-basis: 100%;
+                        max-width: 100%;
+                        width: 980px;
+                        height: 647px;
+                        .hero-bgimage {
+                            width: 694px;
+                            height: 647px;
+                            background-size: 694px 647px;
+                            background-repeat: no-repeat;
+                            background-image: url(https://www.apple.com.cn/iphone/home/images/overview/hero/iphone_12__d51ddqcc7oqe_large.jpg);
+                            position: relative;
+                            left: 50%;
+                            margin-left: -347px;
+                        }
+                    }
+                }
+            }
+        }
+        // 比较各款
+        .section-compare {
+            margin-top: 80px;
+            padding-top: 140px;
+            padding-bottom: 110px;
+            background-color: #fff;
+            margin-bottom: 30px;
+            overflow: hidden;
+            // height: 928px;
+            font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            .section-content {
+                width: 980px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 17px;
+                // font-weight: 400;
+                // line-height: 25px;
+                .tile-headline {
+                    text-align: center;
+                    font-size: 48px;
+                    line-height: 52.0075px;
+                    font-weight: 600;
+                    color: #1d1d1f;
+                }
+                .link-wrapper {
+                    margin-top: 26px;
+                    margin-bottom: 52px;
+                    text-align: center;
+                    font-size: 24px;
+                    line-height: 32.0018px;
+                    letter-spacing: 0.216px;
+                    font-weight: 400;
+                    color: #1d1d1f;
+                    .icon-wrapper {
+                        // text-decoration: none;
+                        color: #06c;
+                        .icon-copy {
+                            font-size: 24px;
+                            line-height: 32px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .compare-tableRow {
+                    margin-top: 0;
+                    margin-left: 44px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    width: 100%;
+                    .compare-column {
+                        flex-basis: 25%;
+                        max-width: 25%;
+                        box-sizing: border-box;
+                        margin: 0;
+                        padding: 0;
+                        padding-right: 20px;
+                        .column-content {
+                            display: flex;
+                            flex-direction: column;
+                            height: 100%;
+                            padding-right: 20px;
+                            .content-wrapper {
+                                flex-grow: 1;
+                                line-height: 25px;
+                                font-weight: 400;
+                                direction: ltr;
+                                .column-image {
+                                    width: 197px;
+                                    height: 254px;
+                                    background-size: 197px 254px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(https://www.apple.com.cn/v/iphone/home/ar/images/overview/compare/compare_iphone_12_pro__gmn3556ju3am_large.jpg);
+                                    margin-bottom: 27px;
+                                }
+                                .compare-headline {
+                                    margin-bottom: 5px;
+                                    font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    // letter-spacing: 0.009em;
+                                    color: #1d1d1f;
+                                }
+                                .typography-body-reduced {
+                                    font-weight: 550;
+                                    margin-top: 0;
+                                    font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                                    letter-spacing: 0;
+                                    font-size: 14px;
+                                    color: #1d1d1f;
+                                    line-height: 20px;
+                                }
+                                .feature-list {
+                                    margin-top: 20px;
+                                    margin-bottom: 0;
+                                    // height: 280px;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    margin-left: 0;
+                                    list-style: none;
+                                    box-sizing: border-box;
+                                    color: rgba(29, 29, 31, 0.8);
+                                    .list-item {
+                                        margin-top: 20px;
+                                        display: list-item;
+                                        text-align: -webkit-match-parent;
+                                        font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                                        .footnote {
+                                            vertical-align: inherit;
+                                            color: inherit;
+                                            top: -0.5em;
+                                            position: relative;
+                                            font-size: 0.6em;
+                                            a {
+                                                text-decoration: none;
+                                                color: #1d1d1f;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .cta-wrapper {
+                                .button-wrapper {
+                                    margin-top: 24px;
+                                    text-align: left;
+                                    line-height: 25px;
+                                    height: auto;
+                                    position: relative;
+                                    .button {
+                                        font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        min-width: 23px;
+                                        font-weight: 400;
+                                        padding: 4px 11px;
+                                        border-radius: 12px;
+                                        background-color: #0071e3;
+                                        color: #fff;
+                                        cursor: pointer;
+                                        display: inline-block;
+                                        text-align: center;
+                                        white-space: nowrap;
+                                        text-decoration: none;
+                                    }
+                                }
+                                .compare-link {
+                                    margin-top: 14px;
+                                    color: #1d1d1f;
+                                    .icon-wrapper {
+                                        // text-decoration: none;
+                                        color: #06c;
+                                        cursor: pointer;
+                                        span {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 新品好礼
+        .section-holiday-2020 {
+            box-sizing: border-box;
+            padding: 0 30px;
+            margin: 0 auto 30px;
+            max-width: 1440px;
+            overflow: hidden;
+            .banner-wrapper {
+                background: #fff;
+                overflow: hidden;
+                .banner-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    width: 100%;
+                    .flex-copy-wrapper {
+                        margin: 48px 0 70px;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        position: relative;
+                        flex-basis: 100%;
+                        max-width: 100%;
+                        .tile-copy {
+                            letter-spacing: 0;
+                            padding-left: 0.6em;
+                            font-size: 48px;
+                            line-height: 52px;
+                            font-weight: 600;
+                        }
+                        .tile-cta-wrapper {
+                            margin-top: 15px;
+                        }
+                    }
+                    .flex-image-wrapper {
+                        margin: 0 0 71px;
+                        min-height: 384px;
+                        // relativflex-basis: 100%;
+                        max-width: 100%;
+                        .image-wrapper {
+                            .banner-image {
+                                background-image: url(https://www.apple.com.cn/iphone/home/images/overview/holiday-2020/aos_holiday_iphone_family_hero__3e5teocnwpum_large.jpg);
+                                height: 384px;
+                                background-size: 1296px 384px;
+                                background-repeat: no-repeat;
+                                background-position: center center;
+                                width: 1296px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 购买方式
+        .section-retail {
+            text-align: center;
+            padding-top: 110px;
+            overflow: hidden;
+            .typography-section-headline {
+                margin-bottom: 70px;
+                font-size: 56px;
+                line-height: 1.07143;
+                font-weight: 600;
+                margin-left: auto;
+                margin-right: auto;
+                color: #1d1d1f;
+            }
+            .flex-tile-wrapper {
+                width: auto;
+                flex-wrap: wrap;
+                overflow: hidden;
+                max-width: 1440px;
+                margin: 0 auto;
+                padding: 0 30px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                .tile-wrapper {
+                    padding-right: 15px;
+                    margin: 0 auto;
+                    width: 100%;
+                    text-align: center;
+                    flex-grow: 1;
+                    box-sizing: border-box;
+                    margin-bottom: 30px;
+                    flex-basis: 50%;
+                    // max-width: 50%;
+                    .content-wrapper {
+                        background: #fff;
+                        padding: 0 40px;
+                        padding-top: 13px;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-left: auto;
+                        margin-right: auto;
+                        .copy-wrapper {
+                            max-width: 455px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            .typography-tile-headline {
+                                margin-top: 52px;
+                                font-size: 48px;
+                                line-height: 1.08349;
+                                font-weight: 600;
+                                color: #1d1d1f;
+                            }
+                            .typography-tile-copy {
+                                margin-top: 25px;
+                                font-size: 21px;
+                                line-height: 1.381;
+                                font-weight: 400;
+                                letter-spacing: .011em;
+                                margin-left: auto;
+                                margin-right: auto;
+                                .nowrap {
+                                    display: inline-block;
+                                    // text-decoration: inherit;
+                                    white-space: nowrap;
+                                    .footnote {
+                                        top: -0.5em;
+                                        position: relative;
+                                        font-size: 0.6em;
+                                        white-space: nowrap;
+                                        .icon-wrapper {
+                                            color: #1d1d1f;
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                            .tile-cta {
+                                margin-top: 16px;
+                                .icon-wrapper {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        .image-wrapper {
+                            .trade-in-image {
+                                width: 675px;
+                                height: 362px;
+                                background-size: 675px 362px;
+                                background-repeat: no-repeat;
+                                background-image: url(https://www.apple.com.cn/v/iphone/home/ar/images/overview/retail/trade_in__f9u728r4pbqu_large.jpg);
+                                position: relative;
+                                left: 50%;
+                                margin-left: -337.5px;
+                                margin-bottom: 9px;
+                            }
+                            .upgrade-image {
+                                width: 675px;
+                                height: 261px;
+                                background-size: 675px 261px;
+                                background-repeat: no-repeat;
+                                background-image: url(https://www.apple.com.cn/v/iphone/home/ar/images/overview/retail/iphone_upgrade_program__euywdszib0a6_large.jpg);
+                                position: relative;
+                                left: 50%;
+                                margin-left: -337.5px;
+                                margin-top: 55px;
+                            }
+                        }
+                    }
+                    .content-wrapper-large {
+                        background: #fff;
+                        padding: 0 40px;
+                        padding-top: 13px;
+                        // box-sizing: border-box;
+                        // overflow: hidden;
+                        // height: 100%;
+                        // display: flex;
+                        // flex-direction: column;
+                        // justify-content: space-between;
+                        // margin-left: auto;
+                        // margin-right: auto;
+                        width: 1289px;
+                        height: 560px;
+                        background-size: 1289px 560px;
+                        background-image: url(https://www.apple.com.cn/v/iphone/home/ar/images/overview/retail/why_apple__genwe8js9fee_large.jpg);
+                        .copy-wrapper {
+                            max-width: 455px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            .typography-tile-headline {
+                                margin-top: 52px;
+                                font-size: 48px;
+                                line-height: 1.08349;
+                                font-weight: 600;
+                                color: #1d1d1f;
+                            }
+                            .typography-tile-copy {
+                                margin-top: 25px;
+                                font-size: 21px;
+                                line-height: 1.381;
+                                font-weight: 400;
+                                letter-spacing: .011em;
+                                margin-left: auto;
+                                margin-right: auto;
+                                .nowrap {
+                                    display: inline-block;
+                                    // text-decoration: inherit;
+                                    white-space: nowrap;
+                                    .footnote {
+                                        top: -0.5em;
+                                        position: relative;
+                                        font-size: 0.6em;
+                                        white-space: nowrap;
+                                        .icon-wrapper {
+                                            color: #1d1d1f;
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                            .tile-cta {
+                                margin-top: 16px;
+                                .icon-wrapper {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

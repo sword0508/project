@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../package/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/navBtn.css">
+    <link rel="stylesheet" href="../css/iphone12pro/12pro.css">
+    <link rel="stylesheet" href="../package/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../package/utils.js">
+    <script src="../package/jquery/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 广告顶部位置 -->
+    <div class="adv-wrapper">
+        <div class="adv-wrapper-text">
+            <广告>
+        </div>
+    </div>
+    <!-- 导航栏1+搜索栏窗口+购物车窗口 -->
+    <nav id="ac-globalnav">
+        <div class="nav_content">
+            <ul class="nav nav-pills">
+                <li role="presentation">
+                    <a href="#"> <img src="../images/globalnav_apple_image__cxwwnrj0urau_large.svg" alt=""></a>
+
+                </li>
+                <li role="presentation"><a href="#">Mac</a></li>
+
+                <li role="presentation"><a href="#">iPad</a></li>
+                <li role="presentation"><a href="#" class="iphoneClick">iPhone</a></li>
+                <li role="presentation"><a href="#">Watch</a></li>
+                <li role="presentation"><a href="#">Music</a></li>
+                <li role="presentation"><a href="#">技术支持</a></li>
+                <li role="presentation">
+                    <a href="#">
+                        <i class="iconfont icon-fenleishousuo"></i>
+                    </a>
+                </li>
+                <li role="presentation"><a href="#"><i class="iconfont icon-gouwuche"></i></a></li>
+            </ul>
+            <!-- 搜索栏窗口 -->
+            <aside id="ac-gn-searchview">
+                <div class="ac-gn-searchview-content">
+                    <div class="ac-gn-searchview-bar">
+                        <div class="ac-gn-searchview-bar-wrapper">
+                            <form id="ac-gn-searchform" action="/search" method="get">
+                                <div class="ac-gn-searchform-wrapper">
+                                    <input class="ac-gn-searchform-input" type="text" aria-label="搜索 apple.com.cn" placeholder="搜索 apple.com.cn">
+                                    <input id="ac-gn-searchform-src" type="hidden" name="src" value="globalnav">
+                                    <button id="ac-gn-searchform-submit" type="submit" disabled="" aria-label="提交搜索"> </button>
+                                    <button id="ac-gn-searchform-reset" type="reset" disabled="" aria-label="清除搜索">
+                                                <span class="ac-gn-searchform-reset-background"></span>
+                                            </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <aside class="ac-gn-searchresults">
+                        <section class=" ac-gn-searchresults-section-defaultlinks">
+                            <div class="ac-gn-searchresults-section-wrapper">
+                                <h3 class="ac-gn-searchresults-header ">快速链接</h3>
+                                <ul class="ac-gn-searchresults-list">
+                                    <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/shop/goto/gifts/" class="ac-gn-searchresults-link">佳节好礼</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/retail/" class="ac-gn-searchresults-link">查找零售店</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item ">
+                                        <a href="https://www.apple.com.cn/shop/goto/shop" class="ac-gn-searchresults-link">Apple Store 商店在线选购</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/shop/goto/accessories/apple_accessories" class="ac-gn-searchresults-link">配件</a>
+                                    </li>
+                                    <li class="ac-gn-searchresults-item">
+                                        <a href="https://www.apple.com.cn/airpods/" role="option" class="ac-gn-searchresults-link">AirPods</a>
+                                    </li>
+                                </ul>
+                                <span role="status" class="ac-gn-searchresults-count" aria-live="polite">5 快速链接</span>
+                            </div>
+                        </section>
+
+                    </aside>
+                </div>
+                <button class="ac-gn-searchview-close
+                    " aria-label="取消搜索">
+                            <span class="ac-gn-searchview-close-wrapper">
+                                <span class="ac-gn-searchview-close-left"></span>
+                                <span class="ac-gn-searchview-close-right"></span>
+                            </span>
+                        </button>
+            </aside>
+        </div>
+
+        <!-- 购物车的窗口 -->
+        <aside class="ac-gn-bagview">
+            <p class="trangle"></p>
+            <div class="ac-gn-bagview-scrim">
+                <span class="ac-gn-bagview-caret"></span>
+            </div>
+            <div class="ac-gn-bagview-content">
+
+
+                <p class="ac-gn-bagview-message">
+                    你的购物袋是空的
+                </p>
+
+
+
+
+                <nav class="ac-gn-bagview-nav">
+                    <ul class="ac-gn-bagview-nav-list">
+                        <li class="ac-gn-bagview-nav-item">
+                            <a href="https://www.apple.com.cn/shop/bag" class="ac-gn-bagview-nav-link ac-gn-bagview-nav-link-bag">
+                    购物袋
+                </a>
+                        </li>
+                        <li class="ac-gn-bagview-nav-item">
+                            <a href="https://www.apple.com.cn/shop/favorites" class="ac-gn-bagview-nav-link ac-gn-bagview-nav-link-favorites">
+                    收藏
+                </a>
+                        </li>
+                        <li class="ac-gn-bagview-nav-item">
+                            <a href="https://secure1.www.apple.com.cn/shop/order/list" class="ac-gn-bagview-nav-link ac-gn-bagview-nav-link-orders">
+                    订单
+                </a>
+                        </li>
+                        <li class="ac-gn-bagview-nav-item">
+                            <a href="https://www.apple.com.cn/shop/account/home" class="ac-gn-bagview-nav-link ac-gn-bagview-nav-link-account"> 账户</a>
+                        </li>
+                        <li class="ac-gn-bagview-nav-item ac-gn-bagview-nav-item-signIn">
+                            <a href="https://secure1.www.apple.com.cn/shop/signIn?c=aHR0cHM6Ly93d3cuYXBwbGUuY29tLmNuL2lwaG9uZS98MWFvc2ViMWQzYmVlNWQ5ZTkxM2Y1NmZiZmNiYTYyMWI2MjFhZmU4NjgxZWM&amp;r=SCDHYHP7CY4H9XK2H&amp;s=aHR0cHM6Ly93d3cuYXBwbGUuY29tLmNuL2lwaG9uZS98MWFvc2ViMWQzYmVlNWQ5ZTkxM2Y1NmZiZmNiYTYyMWI2MjFhZmU4NjgxZWM"
+                                class="ac-gn-bagview-nav-link ac-gn-bagview-nav-link-signIn">
+                                    登录
+                                </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </aside>
+
+        <!-- iphone12 pro 吸顶 -->
+        <nav class="ac-localnav-dark">
+            <div class="ac-ln-wrapper">
+                <div class="ac-ln-background"></div>
+                <div class="ac-ln-content">
+                    <div class="ac-ln-title">
+                        <a href="/iphone-12-pro/"> iPhone 12 Pro </a>
+                    </div>
+                    <div class="ac-ln-menu">
+                        <div class="ac-ln-menu-tray">
+                            <ul class="ac-ln-menu-items">
+                                <li class="ac-ln-menu-item">
+                                    <span class="ac-ln-menu-link current">概览</span>
+                                </li>
+                                <li class="ac-ln-menu-item">
+                                    <a href="/iphone-12-pro/specs/" class="ac-ln-menu-link">技术规格</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ac-ln-actions">
+
+                            <div class="ac-ln-action">
+                                <a class="ac-ln-button" href="/cn/shop/goto/buy_iphone/iphone_12_pro">购买</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </nav>
+    <!-- main -->
+
+    <h2>
+        Superfast wireless
+        <p>Hello 5G.</p>
+    </h2>
+
+    <div id="iphone">
+        <div id="hardware"></div>
+        <div id="ui">
+            <img src="https://assets.codepen.io/2002878/iphone12-5g_top_ui.jpg" class="top-ui" alt="">
+
+            <ul>
+                <li>
+                    <img src="https://assets.codepen.io/2002878/iphone12-5g_show_01.jpg" />
+                </li>
+                <li>
+                    <img src="https://assets.codepen.io/2002878/iphone12-5g_show_02.jpg" />
+                </li>
+                <li>
+                    <img src="https://assets.codepen.io/2002878/iphone12-5g_show_03.jpg" />
+                </li>
+                <li>
+                    <img src="https://assets.codepen.io/2002878/iphone12-5g_show_04.jpg" />
+                </li>
+                <li>
+                    <img src="https://assets.codepen.io/2002878/iphone12-5g_show_05.jpg" />
+                </li>
+                <li>
+                    <img src="https://assets.codepen.io/2002878/iphone12-5g_show_06.jpg" />
+                </li>
+                <li>
+                    <img src="https://assets.codepen.io/2002878/iphone12-5g_show_07.jpg" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="../js/iphoneCrawl.js"></script>
+    <script src="../js/navBtn.js"></script>
+    <script src="../js/iphone.js"></script>
+</body>
+
+</html>
