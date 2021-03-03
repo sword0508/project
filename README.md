@@ -1,2 +1,2 @@
 # project
-第二阶段个人项目iphone
+基于js+php模拟iphone官网
